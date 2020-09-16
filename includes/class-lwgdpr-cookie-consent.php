@@ -78,7 +78,7 @@ class Lw_Gdpr_Cookie_Consent {
 		if ( defined( 'LW_GDPR_COOKIE_CONSENT_VERSION' ) ) {
 			$this->version = LW_GDPR_COOKIE_CONSENT_VERSION;
 		} else {
-			$this->version = '1.9.2';
+			$this->version = '1.0.0';
 		}
 		$this->plugin_name = 'lwgdpr-cookie-consent';
 
@@ -872,12 +872,7 @@ class Lw_Gdpr_Cookie_Consent {
 			'show_again_margin'               => $settings['show_again_margin'],
 			'show_again_div_id'               => $settings['show_again_div_id'],
 		);
-		$wpl_pro_active = get_option( 'wpl_pro_active' );
-		if ( $wpl_pro_active ) {
-			$slim_settings['pro_active'] = true;
-		} else {
-			$slim_settings['pro_active'] = false;
-		}
+
 		$slim_settings = apply_filters( 'gdprcookieconsent_json_settings', $slim_settings );
 		$str           = wp_json_encode( $slim_settings );
 

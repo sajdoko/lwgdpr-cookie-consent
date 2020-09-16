@@ -274,12 +274,8 @@ class Lw_Gdpr_Cookie_Consent_Public {
 
 			$the_options['backdrop'] = $the_options['popup_overlay'] ? 'static' : 'false';
 
-			$wpl_pro_active = get_option( 'wpl_pro_active' );
-			if ( $wpl_pro_active ) {
-				$credit_link_href = 'https://www.localweb.it/';
-			} else {
-				$credit_link_href = 'https://www.localweb.it/';
-			}
+			$credit_link_href = 'https://www.localweb.it/';
+
 			if ( 'lwgdpr' === $the_options['cookie_usage_for'] ) {
 				$credit_link_text = __( 'GDPR Cookie Consent Plugin', 'lwgdpr-cookie-consent' );
 			} elseif ( 'ccpa' === $the_options['cookie_usage_for'] ) {
