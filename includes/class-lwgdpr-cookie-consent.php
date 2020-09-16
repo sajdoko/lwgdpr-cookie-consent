@@ -463,7 +463,7 @@ class Lw_Gdpr_Cookie_Consent {
 			'button_readmore_button_size'     => 'medium',
 			'button_readmore_is_on'           => true,
 			'button_readmore_url_type'        => true,
-			'button_readmore_wp_page'         => false,
+			'button_readmore_wp_page'         => true,
 			'button_readmore_page'            => '0',
 
 			'button_decline_text'             => 'Rifiuta',
@@ -544,7 +544,7 @@ class Lw_Gdpr_Cookie_Consent {
 			'use_color_picker'                => true,
 			'bar_heading_text'                => 'Questo sito web utilizza i cookie',
 			'cookie_bar_as'                   => 'banner', // banner | popup | widget.
-			'cookie_usage_for'                => 'lwgdpr',
+			'cookie_usage_for'                => 'eprivacy',// eprivacy | lwgdpr | ccpa | both.
 			'popup_overlay'                   => true,
 			'about_message'                   => addslashes( ( 'I cookie sono piccoli file di testo che possono essere utilizzati dai siti web per rendere più efficiente l\'esperienza per l\'utente.
 La legge afferma che possiamo memorizzare i cookie sul suo dispositivo se sono strettamente necessari per il funzionamento di questo sito. Per tutti gli altri tipi di cookie abbiamo bisogno del suo permesso.

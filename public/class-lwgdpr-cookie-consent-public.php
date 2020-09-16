@@ -296,7 +296,11 @@ class Lw_Gdpr_Cookie_Consent_Public {
 			$button_readmore_url_link = '';
 			if ( true === $the_options['button_readmore_url_type'] ) {
 				if ( true === $the_options['button_readmore_wp_page'] ) {
-					$button_readmore_url_link = get_privacy_policy_url();
+					if (get_page_by_path('cookie-policy')) {
+						$button_readmore_url_link = get_permalink( get_page_by_path('cookie-policy'));
+					} else {
+						$button_readmore_url_link = get_privacy_policy_url();
+					}
 				}
 				if ( empty( $button_readmore_url_link ) ) {
 					if ( '0' !== $the_options['button_readmore_page'] ) {
