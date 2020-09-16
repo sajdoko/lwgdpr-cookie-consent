@@ -8,49 +8,45 @@ Requires PHP: 7.0
 License: GPLv3
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
-WordPress plugin that helps comply with the EU GDPR's cookie consent.
+Plugin di WordPress che aiuta a rispettare il consenso sui cookie GDPR dell'UE.
 
 == Description ==
 
-WordPress plugin that helps comply with the EU GDPR's cookie consent.
+Plugin di WordPress che aiuta a rispettare il consenso sui cookie GDPR dell'UE.
 
-- Get visitor consent for cookies using a fully customizable cookie consent bar on your website. Helps you comply with <acronym title="European Union General Data Protection Regulation">EU GDPR</acronym>.
+- Ottieni il consenso dei visitatori per i cookie utilizzando una barra del consenso dei cookie completamente personalizzabile sul tuo sito web. Ti aiuta a rispettare <acronym title="European Union General Data Protection Regulation">EU GDPR</acronym>.
 
 == Features ==
 
-The WP Cookie Notice Plugin is lightweight, fast and complies with the latest WordPress coding standards. It comes with the following features.
+Il plugin WP Cookie Notice è leggero, veloce e conforme ai più recenti standard di codifica di WordPress. Viene fornito con le seguenti caratteristiche.
 
-- Give your users granual control on cookies or Option to refuse the consent or for particular non-essential categories only (like marketing or analytics)
+- Fornisci ai tuoi utenti un controllo granulare sui cookie o Opzione per negare il consenso o solo per particolari categorie non essenziali (come marketing o analisi)
 
-- Give your users the choice to revoke their consent.
+- Dai ai tuoi utenti la possibilità di revocare il loro consenso.
 
-- Easily create, edit or delete information about cookies used on your website.
+- Crea, modifica o elimina facilmente le informazioni sui cookie utilizzati sul tuo sito web.
 
-- Categorise cookies into 'Necessary', 'Marketing', 'Analytics' and 'Preferences' categories.
+- Classificare i cookie nelle categorie "Necessario", "Marketing", "Analitica" e "Preferenze".
 
-- Show a subtle, non-intrusive cookie consent notice on your website.
+- Mostra un avviso di consenso sui cookie sottile e non intrusivo sul tuo sito web.
 
-- Link to Privacy Policy page
+- Link alla pagina della Privacy Policy
 
-- Show cookie consent notice as a Banner.
+- Mostra l'avviso di consenso sui cookie come banner, popup o widget.
 
-- Works out of box with your existing theme. Save time by using the default design which uses you website theme styles.
+- Funziona immediatamente con il tuo tema esistente. Risparmia tempo utilizzando il design predefinito che utilizza gli stili del tema del tuo sito web.
 
-- If you want to have your own design - It's a completely customisable cookie notice plugin. Customise the text, colour picker, font customizer to give your own unique look. Animate your banner appearance.
+- Se vuoi avere il tuo design - È un plug-in di notifica dei cookie completamente personalizzabile. Personalizza il testo, il selettore di colori, la personalizzazione dei caratteri per dare il tuo aspetto unico. Anima l'aspetto del tuo banner.
 
-- Get granular cookie consent for cookie categories of their choice.
+- Ottimizzato per le prestazioni. Funziona con i più diffusi plugin di cache.
 
-- Optimized for performance. Works with popular caching plugins.
+- Mostra le informazioni sui cookie sulla tua politica sulla privacy o su qualsiasi altra pagina con uno shortcode WordPress facile da usare. `[wpl_cookie_details]`
 
-- Provide option for user to change prior consent.
-
-- Show cookie information on your privacy policy or any other page with an easy to use WordPress shortcode. `[wpl_cookie_details]`
-
-- WPML, Polylang, QTranslate, WP Multilang compatible
+- Compatibile con WPML, Polylang, QTranslate, WP Multilang
 
 - SEO friendly
 
-- Mobile responsive design
+- Design reattivo mobile
 
 
 == Installation ==
@@ -61,21 +57,21 @@ This section describes how to install the plugin and get it working.
 2. Activate the plugin through the 'Plugins' menu in WordPress
 3. Go to "GDPR Cookie Consent" to configure the cookie notice bar with your own text, colours and styles
 
-NOTE: Installing this plugin does not alone make your website GDPR compliant. Every website has different cookie needs and needs to be configured accordingly.
+NOTE: L'installazione di questo plug-in non rende il tuo sito Web conforme al GDPR. Ogni sito web ha esigenze di cookie diverse e deve essere configurato di conseguenza.
 
 == Frequently Asked Questions ==
 
-= Will my website become GDPR compliant after installing the plugin?
-Cookie consent is just one aspect of GDPR. Installing the plugin does not guarantee compliance. You’ll still need to implement other aspects of the GDPR regulation.
+= Il mio sito web diventerà conforme al GDPR dopo l'installazione del plug-in?
+Il consenso sui cookie è solo un aspetto del GDPR. L'installazione del plugin non garantisce la conformità. Dovrai comunque implementare altri aspetti del regolamento GDPR.
 
-= Will I have to add all the cookies manually?
-Yes.
+= Dovrò aggiungere tutti i cookie manualmente?
+Si.
 
-= Do visitors now have to accept/reject cookies in order to use websites?
-No. Only the ‘necessary’ cookies will be loaded until the user gives consent.
+= I visitatori ora devono accettare/rifiutare i cookie per utilizzare i siti Web?
+No. Solo i cookie "necessari" verranno caricati fino a quando l'utente non darà il consenso.
 
-= Does it block 3rd party resources loaded via iFrames (such as Youtube)?
-Yes, It has an iFrame Blocker – The user data is not tracked via iFrames unless they give the consent. Users can choose which category of cookies they want to allow.
+= Blocca le risorse di terze parti caricate tramite iframe (come Youtube)?
+Sì, ha un blocco iframe - I dati dell'utente non vengono tracciati tramite iframe a meno che non diano il consenso. Gli utenti possono scegliere quale categoria di cookie desiderano consentire.
 
 == Change Log ==
 = 1.0 =
