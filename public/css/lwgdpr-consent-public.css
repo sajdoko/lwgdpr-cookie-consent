@@ -2,6 +2,10 @@
  * All of the CSS for your public-facing functionality should be
  * included in this file.
  */
+div:focus {
+	outline: none;
+}
+
 #lwgdpr-cookie-consent-bar, #lwgdpr-cookie-consent-show-again {
 	margin: 0 auto;
 	padding: 5px 0;
@@ -143,6 +147,10 @@
 }
 #cookie_action_close_banner {
 	float: right;
+	padding: 0.75rem !important;
+	background: url(../images/close.svg);
+	background-color: transparent !important;
+	color: rgb(41, 41, 41) !important;
 }
 
 #lwgdpr-cookie-consent-bar .lwgdpr_messagebar_detail {
@@ -198,6 +206,12 @@
 }
 #lwgdpr-cookie-consent-bar .lwgdpr_messagebar_detail #lwgdpr_messagebar_detail_body #lwgdpr_messagebar_detail_body_content_tabs #lwgdpr_messagebar_detail_body_content_tabs_about {
 	margin-left: -4px;
+}
+#lwgdpr_messagebar_detail_body_content_tabs_overview {
+	font-weight: 500;
+}
+#lwgdpr_messagebar_detail_body_content_tabs_about {
+	font-weight: 500;
 }
 #lwgdpr-cookie-consent-bar .lwgdpr_messagebar_detail #lwgdpr_messagebar_detail_body #lwgdpr_messagebar_detail_body_content_tabs a.lwgdpr_messagebar_detail_body_content_tab {
 	display:inline-block;
@@ -270,6 +284,7 @@
 	text-align:left;
 	padding:2px;
 	font-weight:400;
+	border: 1px solid #cccccc;
 }
 #lwgdpr-cookie-consent-bar .lwgdpr_messagebar_detail #lwgdpr_messagebar_detail_body #lwgdpr_messagebar_detail_body_content #lwgdpr_messagebar_detail_body_content_about {
 	padding:12px;
@@ -914,12 +929,17 @@ fieldset:disabled #lwgdpr-cookie-consent-bar a.btn {
 	}
 	#lwgdpr-cookie-consent-bar, #lwgdpr-cookie-consent-show-again {
 		font-size: 11px;
+		padding: 1em;
 	}
 	#lwgdpr-cookie-consent-bar .lwgdpr_messagebar_content h3 {
 		font-size: 16px;
 	}
 	.lwgdpr_messagebar_detail .category-group .category-item h3 {
 		font-size: 16px;
+	}
+	#cookie_action_settings {
+		float: none;
+    margin-top: 1em;
 	}
 
 	.lwgdpr_messagebar_detail .modal-footer {

@@ -12,7 +12,7 @@
             {% if head != '' %}
                 <h3 class="lwgdpr_messagebar_head">{{ __( head, 'lwgdpr-cookie-consent' ) }}</h3>
             {% endif %}
-            <a id="cookie_action_close_banner" class="{{ button_settings_classes }}" tabindex="0" aria-label="Chiudi" data-lwgdpr_action="close_banner" style="color: rgb(255, 255, 255); background-color: rgb(41, 41, 41);">{{ __( 'Chiudi', 'lwgdpr-cookie-consent' ) }}</a>
+            <a id="cookie_action_close_banner" class="{{ button_settings_classes }}" tabindex="0" aria-label="Chiudi" data-lwgdpr_action="close_banner"></a>
             <div class="group-description" tabindex="0"><p class="lwgdpr">{{ __( lwgdpr_str, 'lwgdpr-cookie-consent' ) }}
                 {% if button_readmore_is_on %}
                     <a id="cookie_action_link" href="{{ button_readmore_url_link }}" class="{{ button_readmore_classes }}"

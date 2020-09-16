@@ -18,9 +18,7 @@ body.post-type-wplconsentlogs .wrap .wplconsentlogsdetails table td {
 	margin: inherit;
 	padding: inherit;
 }
-#wpcontent {
-	background: #fff;
-}
+
 #lwgdpr-plugin-migrate {
 	background: #C5E3BF;
 	border: 1px solid #98A148;
@@ -265,7 +263,6 @@ table.wc_emails .wc-email-settings-table-status .tips,table.lwgdpr_script_items 
 }
 .lwgdpr-cookie-consent-tab-head{ margin-right:0px;}
 .lwgdpr-cookie-consent-tab-container{
-	background: #fff;
 	box-sizing:border-box;
 	width:100%;
 	height:auto;

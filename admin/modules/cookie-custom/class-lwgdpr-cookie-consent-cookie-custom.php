@@ -253,6 +253,7 @@ echo '<textarea name="about_message_field" class="vvv_textbox">';
       }
     } else {
       $this->lwgdpr_install_tables();
+      $this->lwgdpr_wpfc_compability();
     }
   }
 
@@ -302,6 +303,45 @@ echo '<textarea name="about_message_field" class="vvv_textbox">';
     }
     $this->lwgdpr_insert_default_cookies();
     $this->lwgdpr_update_category_table();
+  }
+
+  
+  /**
+   * Wp Fastest Cache Compability.
+   *
+   * @since 1.0
+   */
+  public function lwgdpr_wpfc_compability() {
+
+    if($wp_fastest_cache_exclude = get_option("WpFastestCache", false)) {
+      $new_rule = new stdClass;
+      $new_rule->prefix = "contain";
+      $new_rule->content = "lwgdpr_";
+      $new_rule->type = "cookie";
+
+      if($wp_fastest_cache_exclude = get_option("WpFastestCacheExclude", false)) {
+
+        $rules_std = json_decode($wp_fastest_cache_exclude);
+
+        if(!is_array($rules_std)){
+          $rules_std = array();
+        }
+
+        if(!in_array($new_rule, $rules_std)){
+          array_push($rules_std, $new_rule);
+          update_option("WpFastestCacheExclude", json_encode($rules_std));
+        }
+      } else {
+
+        $rules_std = array();
+
+        array_push($rules_std, $new_rule);
+        add_option("WpFastestCacheExclude", json_encode($rules_std), null, "yes");
+
+      }
+
+    }
+
   }
 
   /**
