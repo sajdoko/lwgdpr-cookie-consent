@@ -343,13 +343,13 @@ class Lw_Gdpr_Cookie_Consent_Admin {
 	 */
 	public function get_cookie_expiry_options() {
 		$options = array(
-			__( 'An hour', 'lwgdpr-cookie-consent' )  => '' . number_format( 1 / 24, 2 ) . '',
-			__( '1 Day', 'lwgdpr-cookie-consent' )    => '1',
-			__( '1 Week', 'lwgdpr-cookie-consent' )   => '7',
-			__( '1 Month', 'lwgdpr-cookie-consent' )  => '30',
-			__( '3 Months', 'lwgdpr-cookie-consent' ) => '90',
-			__( '6 Months', 'lwgdpr-cookie-consent' ) => '180',
-			__( '1 Year', 'lwgdpr-cookie-consent' )   => '365',
+			__( '1 Ora', 'lwgdpr-cookie-consent' )  => '' . number_format( 1 / 24, 2 ) . '',
+			__( '1 Giorno', 'lwgdpr-cookie-consent' )    => '1',
+			__( '1 Settimana', 'lwgdpr-cookie-consent' )   => '7',
+			__( '1 Mese', 'lwgdpr-cookie-consent' )  => '30',
+			__( '3 Mesi', 'lwgdpr-cookie-consent' ) => '90',
+			__( '6 Mesi', 'lwgdpr-cookie-consent' ) => '180',
+			__( '1 Anno', 'lwgdpr-cookie-consent' )   => '365',
 		);
 		$options = apply_filters( 'gdprcookieconsent_cookie_expiry_options', $options );
 		return $options;

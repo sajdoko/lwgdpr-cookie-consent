@@ -69,8 +69,8 @@ class Lw_Gdpr_Cookie_Consent_Public {
 		$this->plugin_name = $plugin_name;
 		$this->version     = $version;
 
-		if ( ! shortcode_exists( 'wpl_cookie_details' ) ) {
-			add_shortcode( 'wpl_cookie_details', array( $this, 'gdprcookieconsent_shortcode_cookie_details' ) );         // a shortcode [wpl_cookie_details].
+		if ( ! shortcode_exists( 'lw_shortcode_cookie_details' ) ) {
+			add_shortcode( 'lw_shortcode_cookie_details', array( $this, 'gdprcookieconsent_shortcode_cookie_details' ) );         // a shortcode [lw_shortcode_cookie_details].
 		}
 
 	}
@@ -479,7 +479,7 @@ class Lw_Gdpr_Cookie_Consent_Public {
 	}
 
 	/**
-	 * Returns policy data for shortcode wpl_cookie_details.
+	 * Returns policy data for shortcode lw_shortcode_cookie_details.
 	 *
 	 * @return string|void
 	 */

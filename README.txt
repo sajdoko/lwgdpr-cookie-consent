@@ -40,7 +40,7 @@ Il plugin WP Cookie Notice è leggero, veloce e conforme ai più recenti standar
 
 - Ottimizzato per le prestazioni. Funziona con i più diffusi plugin di cache.
 
-- Mostra le informazioni sui cookie sulla tua politica sulla privacy o su qualsiasi altra pagina con uno shortcode WordPress facile da usare. `[wpl_cookie_details]`
+- Mostra le informazioni sui cookie sulla tua politica sulla privacy o su qualsiasi altra pagina con uno shortcode WordPress facile da usare. `[lw_shortcode_cookie_details]`
 
 - Compatibile con WPML, Polylang, QTranslate, WP Multilang
 
