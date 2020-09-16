@@ -1,0 +1,189 @@
+{% if cookie_bar_as == 'popup' %}
+<div class="modal fade" id="lwgdpr-{{ cookie_bar_as }}" role="dialog" data-keyboard="false" data-backdrop="{{ backdrop }}">
+    <div class="modal-dialog modal-dialog-centered">
+        <!-- Modal content-->
+        <div class="modal-content">
+            <div class="modal-body">
+{% endif %}
+<!-- WP Cookie Notice for GDPR, CCPA & ePrivacy Consent v{{ version }} by WPEka Club - https://wordpress.org/plugins/lwgdpr-cookie-consent/ -->
+<div id="{{ container_id }}" class="{{ container_class }}">
+    {% if lwgdpr_notify %}
+        <div class="lwgdpr_messagebar_content">
+            {% if head != '' %}
+                <h3 class="lwgdpr_messagebar_head">{{ __( head, 'lwgdpr-cookie-consent' ) }}</h3>
+            {% endif %}
+            <a id="cookie_action_close_banner" class="{{ button_settings_classes }}" tabindex="0" aria-label="Chiudi" data-lwgdpr_action="close_banner" style="color: rgb(255, 255, 255); background-color: rgb(41, 41, 41);">{{ __( 'Chiudi', 'lwgdpr-cookie-consent' ) }}</a>
+            <div class="group-description" tabindex="0"><p class="lwgdpr">{{ __( lwgdpr_str, 'lwgdpr-cookie-consent' ) }}
+                {% if button_readmore_is_on %}
+                    <a id="cookie_action_link" href="{{ button_readmore_url_link }}" class="{{ button_readmore_classes }}"
+                            {% if button_readmore_new_win %}
+                                target="_blank"
+                            {% endif %}
+                    >{{ __( button_readmore_text, 'lwgdpr-cookie-consent' ) }}</a>
+                {% endif %}
+                </p>
+                {% if ccpa_notify %}
+                    <p class="ccpa">
+                    {{ __( ccpa_str, 'lwgdpr-cookie-consent' ) }}
+                    {% if button_donotsell_is_on %}
+                        <a data-toggle="modal" href="#" class="{{ button_donotsell_classes }}" data-lwgdpr_action="donotsell" id="cookie_donotsell_link"
+                        >{{ __( button_donotsell_text, 'lwgdpr-cookie-consent' ) }}</a>
+                    {% endif %}
+                </p>
+                {% endif %}
+            </div>
+            <div class="lwgdpr group-description-buttons">
+                {% if button_accept_is_on %}
+                    <a id="cookie_action_accept_all" class="{{ button_accept_classes }}" tabindex="0" aria-label="Accept All" href="#"
+                            {% if button_accept_action == 'CONSTANT_OPEN_URL' %}
+                                href="{{ button_accept_url }}"
+                                {% if button_accept_new_win %}
+                                    target="_blank"
+                                {% endif %}
+                            {% endif %}
+                       data-lwgdpr_action="accept_all" style="color: rgb(255, 255, 255); background-color: rgb(24, 163, 0);">{{ __('Accetta Tutti', 'lwgdpr-cookie-consent' ) }}</a>
+                    <a id="cookie_action_accept" class="{{ button_accept_classes }}" tabindex="0" aria-label="Accept" href="#"
+                            {% if button_accept_action == 'CONSTANT_OPEN_URL' %}
+                                href="{{ button_accept_url }}"
+                                {% if button_accept_new_win %}
+                                    target="_blank"
+                                {% endif %}
+                            {% endif %}
+                       data-lwgdpr_action="accept" >{{ __( button_accept_text, 'lwgdpr-cookie-consent' ) }}</a>
+                {% endif %}
+                {% if button_decline_is_on %}
+                    <a id="cookie_action_reject" class="{{ button_decline_classes }}" tabindex="0" aria-label="Reject" href="#"
+                            {% if button_decline_action == 'CONSTANT_OPEN_URL' %}
+                                href="{{ button_decline_url }}"
+                                {% if button_decline_new_win %}
+                                    target="_blank"
+                                {% endif %}
+                            {% endif %}
+                       data-lwgdpr_action="reject" >{{ __( button_decline_text, 'lwgdpr-cookie-consent' ) }}</a>
+                {% endif %}
+                {% if button_settings_is_on %}
+                    <a id="cookie_action_settings" class="{{ button_settings_classes }}" tabindex="0" aria-label="Cookie Settings" href="#"
+                            {% if not button_settings_as_button %}
+                                href="#"
+                            {% endif %}
+                            {% if cookie_bar_as == 'banner' and not button_settings_as_popup %}
+                                data-lwgdpr_action="show_settings"
+                            {% else %}
+                                data-lwgdpr_action="settings" data-toggle="modal" data-target="#lwgdpr-modal"
+                            {% endif %}
+                    >{{ __( button_settings_text, 'lwgdpr-cookie-consent' ) }}</a>
+                {% endif %}
+            </div>
+        </div>
+        {% if cookie_data %}
+            {% if cookie_bar_as == 'banner' and not button_settings_as_popup %}
+                <div class="lwgdpr_messagebar_detail" style="display:none;max-width:1000px;">
+                    {% include 'templates/banner.twig' with cookie_data %}
+                </div>
+            {% endif %}
+        {% endif %}
+    {% elseif ccpa_notify %}
+        <div class="lwgdpr_messagebar_content">
+            <div class="group-description" tabindex="0"><p class="ccpa">{{ __( ccpa_str, 'lwgdpr-cookie-consent' ) }}
+                {% if button_donotsell_is_on %}
+                    <a data-toggle="modal" href="#" class="{{ button_donotsell_classes }}" data-lwgdpr_action="donotsell" id="cookie_donotsell_link"
+                    >{{ __( button_donotsell_text, 'lwgdpr-cookie-consent' ) }}</a>
+                {% endif %}
+                </p>
+            </div>
+        </div>
+    {% elseif eprivacy_notify %}
+        <div class="lwgdpr_messagebar_content">
+            {% if head != '' %}
+                <h3 class="lwgdpr_messagebar_head">{{ __( head, 'lwgdpr-cookie-consent' ) }}</h3>
+            {% endif %}
+            <div class="group-description" tabindex="0"><p class="lwgdpr">{{ __( eprivacy_str, 'lwgdpr-cookie-consent' ) }}
+                    {% if button_readmore_is_on %}
+                        <a id="cookie_action_link" href="{{ button_readmore_url_link }}" class="{{ button_readmore_classes }}"
+                                {% if button_readmore_new_win %}
+                                    target="_blank"
+                                {% endif %}
+                        >{{ __( button_readmore_text, 'lwgdpr-cookie-consent' ) }}</a>
+                    {% endif %}
+                </p>
+            </div>
+            <div class="lwgdpr group-description-buttons">
+                {% if button_accept_is_on %}
+                    <a id="cookie_action_accept" class="{{ button_accept_classes }}" tabindex="0" aria-label="Accept" href="#"
+                            {% if button_accept_action == 'CONSTANT_OPEN_URL' %}
+                                href="{{ button_accept_url }}"
+                                {% if button_accept_new_win %}
+                                    target="_blank"
+                                {% endif %}
+                            {% endif %}
+                       data-lwgdpr_action="accept" >{{ __( button_accept_text, 'lwgdpr-cookie-consent' ) }}</a>
+                {% endif %}
+                {% if button_decline_is_on %}
+                    <a id="cookie_action_reject" class="{{ button_decline_classes }}" tabindex="0" aria-label="Reject" href="#"
+                            {% if button_decline_action == 'CONSTANT_OPEN_URL' %}
+                                href="{{ button_decline_url }}"
+                                {% if button_decline_new_win %}
+                                    target="_blank"
+                                {% endif %}
+                            {% endif %}
+                       data-lwgdpr_action="reject" >{{ __( button_decline_text, 'lwgdpr-cookie-consent' ) }}</a>
+                {% endif %}
+            </div>
+            {% if show_credits %}
+                {% if credits %}
+                    <div class="powered-by-credits">{{ credits }}</div>
+                {% endif %}
+            {% endif %}
+        </div>
+    {% endif %}
+</div>
+{% if cookie_bar_as == 'popup' %}
+            </div>
+        </div>
+    </div>
+</div>
+{% endif %}
+{% if lwgdpr_notify %}
+    {% if cookie_data %}
+        {% if cookie_bar_as == 'banner' and not button_settings_as_popup %}
+
+        {% else %}
+            <div class="lwgdpr_messagebar_detail">
+                {% include 'templates/modal.twig' with cookie_data %}
+            </div>
+        {% endif %}
+
+    {% endif %}
+    {% if show_again %}
+        <div id="{{ show_again_container_id }}">
+            <span>{{ __( show_again_text, 'lwgdpr-cookie-consent' ) }}</span>
+        </div>
+    {% endif %}
+{% endif %}
+{% if eprivacy_notify %}
+    {% if show_again %}
+        <div id="{{ show_again_container_id }}">
+            <span>{{ __( show_again_text, 'lwgdpr-cookie-consent' ) }}</span>
+        </div>
+    {% endif %}
+{% endif %}
+{% if ccpa_notify %}
+    <div class="modal fade" id="lwgdpr-ccpa-modal" role="dialog" data-keyboard="false" data-backdrop="{{ cookie_data['backdrop'] }}">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-body"><p>{{ __( optout_text, 'lwgdpr-cookie-consent' ) }}
+                        <button type="button" class="lwgdpr_action_button close" data-dismiss="modal" data-lwgdpr_action="ccpa_close"></button></p>
+                </div>
+                <div class="modal-footer">
+                    {% if show_credits %}
+                        {% if credits %}
+                            <div class="powered-by-credits">{{ credits }}</div>
+                        {% endif %}
+                    {% endif %}
+                    <button id="cookie_action_cancel" type="button" class="{{ button_cancel_classes }}" data-lwgdpr_action="cancel" data-dismiss="modal">{{ __( button_cancel_text, 'lwgdpr-cookie-consent' ) }}</button>
+                    <button id="cookie_action_confirm" type="button" class="{{ button_confirm_classes }}" data-lwgdpr_action="confirm" data-dismiss="modal">{{ __( button_confirm_text, 'lwgdpr-cookie-consent' ) }}</button>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endif %}
