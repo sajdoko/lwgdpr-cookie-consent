@@ -2,8 +2,8 @@
 Contributors: sajdoko
 Tags: GDPR, cookies, eu cookie law, cookie consent, eu privacy, privacy
 Requires at least: 3.3.1
-Tested up to: 5.4.2
-Stable tag: 1.9.2
+Tested up to: 5.5
+Stable tag: 1.0.0
 Requires PHP: 7.0
 License: GPLv3
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
@@ -61,16 +61,16 @@ NOTE: L'installazione di questo plug-in non rende il tuo sito Web conforme al GD
 
 == Frequently Asked Questions ==
 
-= Il mio sito web diventerà conforme al GDPR dopo l'installazione del plug-in?
+Il mio sito web diventerà conforme al GDPR dopo l'installazione del plug-in?
 Il consenso sui cookie è solo un aspetto del GDPR. L'installazione del plugin non garantisce la conformità. Dovrai comunque implementare altri aspetti del regolamento GDPR.
 
-= Dovrò aggiungere tutti i cookie manualmente?
+Dovrò aggiungere tutti i cookie manualmente?
 Si.
 
-= I visitatori ora devono accettare/rifiutare i cookie per utilizzare i siti Web?
+I visitatori ora devono accettare/rifiutare i cookie per utilizzare i siti Web?
 No. Solo i cookie "necessari" verranno caricati fino a quando l'utente non darà il consenso.
 
-= Blocca le risorse di terze parti caricate tramite iframe (come Youtube)?
+Blocca le risorse di terze parti caricate tramite iframe (come Youtube)?
 Sì, ha un blocco iframe - I dati dell'utente non vengono tracciati tramite iframe a meno che non diano il consenso. Gli utenti possono scegliere quale categoria di cookie desiderano consentire.
 
 == Change Log ==
