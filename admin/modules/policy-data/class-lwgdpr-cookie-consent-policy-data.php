@@ -84,7 +84,7 @@ class Lw_Gdpr_Cookie_Consent_Policy_Data {
 			),
 			'supports'            => array( 'title', 'editor' ),
 		);
-		register_post_type( GDPR_POLICY_DATA_POST_TYPE, $args );
+		register_post_type( LW_GDPR_POLICY_DATA_POST_TYPE, $args );
 	}
 
 	/**
@@ -204,7 +204,7 @@ class Lw_Gdpr_Cookie_Consent_Policy_Data {
 	 */
 	public function lwgdpr_add_policies_import_button() {
 		global $current_screen;
-		if ( GDPR_POLICY_DATA_POST_TYPE !== $current_screen->post_type ) {
+		if ( LW_GDPR_POLICY_DATA_POST_TYPE !== $current_screen->post_type ) {
 			return;
 		}
 		$scan_import_menu = __( 'Import from CSV', 'lwgdpr-cookie-consent' );
@@ -228,7 +228,7 @@ class Lw_Gdpr_Cookie_Consent_Policy_Data {
 	 */
 	public function lwgdpr_add_policies_export_button() {
 		global $current_screen;
-		if ( GDPR_POLICY_DATA_POST_TYPE !== $current_screen->post_type ) {
+		if ( LW_GDPR_POLICY_DATA_POST_TYPE !== $current_screen->post_type ) {
 			return;
 		}
 		$scan_export_menu = __( 'Export as CSV', 'lwgdpr-cookie-consent' );
@@ -283,7 +283,7 @@ class Lw_Gdpr_Cookie_Consent_Policy_Data {
 			'lwgdpr_csv_export_policies_args',
 			array(
 				'post_status' => array( 'publish', 'draft' ),
-				'post_type'   => array( GDPR_POLICY_DATA_POST_TYPE ),
+				'post_type'   => array( LW_GDPR_POLICY_DATA_POST_TYPE ),
 				'orderby'     => 'ID',
 				'numberposts' => -1,
 				'order'       => 'ASC',
@@ -398,7 +398,7 @@ class Lw_Gdpr_Cookie_Consent_Policy_Data {
 
 		$file_handle = @fopen( $filename, 'r' ); // @codingStandardsIgnoreLine
 		if ( $file_handle ) {
-			$csv_reader = new Lw_Gdpr_Cookies_Read_Csv( $file_handle, GDPR_CSV_DELIMITER, "\xEF\xBB\xBF" ); // Skip any UTF-8 byte order mark.
+			$csv_reader = new Lw_Gdpr_Cookies_Read_Csv( $file_handle, LW_GDPR_CSV_DELIMITER, "\xEF\xBB\xBF" ); // Skip any UTF-8 byte order mark.
 			$first      = true;
 			$rkey       = 0;
 			while ( ( $csv_reader->get_row() ) !== null ) {
@@ -442,7 +442,7 @@ class Lw_Gdpr_Cookie_Consent_Policy_Data {
 					'post_name'     => ( sanitize_title( $lwgdpr_policies_data['post_title'] ) ),
 					'post_status'   => ( $lwgdpr_policies_data['post_status'] ) ? $lwgdpr_policies_data['post_status'] : 'publish',
 					'post_parent'   => 0,
-					'post_type'     => GDPR_POLICY_DATA_POST_TYPE,
+					'post_type'     => LW_GDPR_POLICY_DATA_POST_TYPE,
 				);
 				$post_id   = post_exists( $lwgdpr_policies_data['post_title'] );
 				if ( $post_id ) {

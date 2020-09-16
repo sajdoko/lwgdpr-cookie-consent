@@ -92,7 +92,7 @@ class Lw_Gdpr_Cookie_Consent_Admin {
 		 * class.
 		 */
 		wp_enqueue_style( 'wp-color-picker' );
-		wp_register_style( $this->plugin_name, plugin_dir_url( __FILE__ ) . 'css/lwgdpr-consent-admin' . GDPR_CC_SUFFIX . '.css', array(), $this->version, 'all' );
+		wp_register_style( $this->plugin_name, plugin_dir_url( __FILE__ ) . 'css/lwgdpr-consent-admin' . LW_GDPR_CC_SUFFIX . '.css', array(), $this->version, 'all' );
 
 	}
 
@@ -113,7 +113,7 @@ class Lw_Gdpr_Cookie_Consent_Admin {
 		 * class.
 		 */
 
-		wp_register_script( $this->plugin_name, plugin_dir_url( __FILE__ ) . 'js/lwgdpr-consent-admin' . GDPR_CC_SUFFIX . '.js', array( 'jquery', 'wp-color-picker', 'gdprcookieconsent_cookie_custom' ), $this->version, false );
+		wp_register_script( $this->plugin_name, plugin_dir_url( __FILE__ ) . 'js/lwgdpr-consent-admin' . LW_GDPR_CC_SUFFIX . '.js', array( 'jquery', 'wp-color-picker', 'gdprcookieconsent_cookie_custom' ), $this->version, false );
 
 	}
 

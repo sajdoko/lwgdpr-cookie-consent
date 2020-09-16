@@ -36,7 +36,29 @@ if ( ! class_exists( 'Lw_Gdpr_Cookie_Consent_Cookie_Serve_Api' ) ) {
 		public function get_categories() {
 			return json_decode(
 				'[{
-				"term_id": 4,
+				"term_id": 1,
+				"name": "Necessario",
+				"slug": "necessary",
+				"term_group": 0,
+				"term_taxonomy_id": 1,
+				"taxonomy": "wplcookies-category",
+				"description": "I cookie necessari aiutano a rendere fruibile un sito web abilitando le funzioni di base come la navigazione della pagina e lo accesso alle aree protette del sito. Il sito web non può funzionare correttamente senza questi cookie.",
+				"parent": 0,
+				"count": 100,
+				"filter": "raw"
+			}, {
+				"term_id": 2,
+				"name": "Preferenze",
+				"slug": "preferences",
+				"term_group": 0,
+				"term_taxonomy_id": 2,
+				"taxonomy": "wplcookies-category",
+				"description": "I cookie di preferenza consentono a un sito web di ricordare le informazioni che cambiano il modo in cui il sito web si comporta o appare, come la tua lingua preferita o la regione in cui ti trovi.",
+				"parent": 0,
+				"count": 45,
+				"filter": "raw"
+			}, {
+				"term_id": 3,
 				"name": "Analitici",
 				"slug": "analytics",
 				"term_group": 0,
@@ -47,37 +69,15 @@ if ( ! class_exists( 'Lw_Gdpr_Cookie_Consent_Cookie_Serve_Api' ) ) {
 				"count": 214,
 				"filter": "raw"
 			}, {
-				"term_id": 5,
+				"term_id": 4,
 				"name": "Marketing",
 				"slug": "marketing",
 				"term_group": 0,
-				"term_taxonomy_id": 5,
+				"term_taxonomy_id": 4,
 				"taxonomy": "wplcookies-category",
 				"description": "I cookie di marketing vengono utilizzati per monitorare i visitatori sui siti Web. La intenzione è quella di visualizzare annunci pertinenti e coinvolgenti per il singolo utente e quindi più preziosi per editori e inserzionisti di terze parti.",
 				"parent": 0,
 				"count": 53,
-				"filter": "raw"
-			}, {
-				"term_id": 2,
-				"name": "Necessario",
-				"slug": "necessary",
-				"term_group": 0,
-				"term_taxonomy_id": 2,
-				"taxonomy": "wplcookies-category",
-				"description": "I cookie necessari aiutano a rendere fruibile un sito web abilitando le funzioni di base come la navigazione della pagina e lo accesso alle aree protette del sito. Il sito web non può funzionare correttamente senza questi cookie.",
-				"parent": 0,
-				"count": 100,
-				"filter": "raw"
-			}, {
-				"term_id": 3,
-				"name": "Preferenze",
-				"slug": "preferences",
-				"term_group": 0,
-				"term_taxonomy_id": 3,
-				"taxonomy": "wplcookies-category",
-				"description": "I cookie di preferenza consentono a un sito web di ricordare le informazioni che cambiano il modo in cui il sito web si comporta o appare, come la tua lingua preferita o la regione in cui ti trovi.",
-				"parent": 0,
-				"count": 45,
 				"filter": "raw"
 			}]', true );
 		}

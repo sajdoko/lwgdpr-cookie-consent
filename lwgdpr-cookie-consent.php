@@ -11,7 +11,7 @@
  * Plugin URI:        https://www.localweb.it//
  * Description:       Soluzione conforme al GDPR per informare gli utenti che il sito Web utilizza i cookie, con la possibilità di bloccare gli script prima del consenso.
  * Version:           1.0.0
- * Author:            sajdoko
+ * Author:            Local Web S.R.L
  * Author URI:        https://www.localweb.it/
  * License:           GPL-2.0+
  * License URI:       http://www.gnu.org/licenses/gpl-2.0.txt
@@ -39,12 +39,11 @@ define( 'LW_GDPR_COOKIE_CONSENT_DB_KEY_PREFIX', 'LWGDPRCookieConsent-' );
 define( 'LW_GDPR_COOKIE_CONSENT_LATEST_VERSION_NUMBER', '1.0' );
 define( 'LW_GDPR_COOKIE_CONSENT_SETTINGS_FIELD', LW_GDPR_COOKIE_CONSENT_DB_KEY_PREFIX . LW_GDPR_COOKIE_CONSENT_LATEST_VERSION_NUMBER );
 define( 'LW_GDPR_COOKIE_CONSENT_PLUGIN_FILENAME', __FILE__ );
-define( 'GDPR_POLICY_DATA_POST_TYPE', 'gdprpolicies' );
-define( 'GDPR_CSV_DELIMITER', ',' );
-if ( ! defined( 'GDPR_CC_SUFFIX' ) ) {
-	define( 'GDPR_CC_SUFFIX', ( defined( 'SCRIPT_DEBUG' ) && SCRIPT_DEBUG ) ? '' : '.min' );
+define( 'LW_GDPR_POLICY_DATA_POST_TYPE', 'gdprpolicies' );
+define( 'LW_GDPR_CSV_DELIMITER', ',' );
+if ( ! defined( 'LW_GDPR_CC_SUFFIX' ) ) {
+	define( 'LW_GDPR_CC_SUFFIX', ( defined( 'SCRIPT_DEBUG' ) && SCRIPT_DEBUG ) ? '' : '.min' );
 }
-
 
 /**
  * Clean variables using sanitize_text_field. Arrays are cleaned recursively.
@@ -54,9 +53,9 @@ if ( ! defined( 'GDPR_CC_SUFFIX' ) ) {
  *
  * @return string|array
  */
-function gdprcc_clean( $var ) {
+function lwgdprcc_clean( $var ) {
 	if ( is_array( $var ) ) {
-		return array_map( 'gdprcc_clean', $var );
+		return array_map( 'lwgdprcc_clean', $var );
 	} else {
 		return is_scalar( $var ) ? sanitize_text_field( $var ) : $var;
 	}

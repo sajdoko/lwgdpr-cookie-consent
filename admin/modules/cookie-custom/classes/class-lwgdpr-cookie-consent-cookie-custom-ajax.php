@@ -104,7 +104,7 @@ class Lw_Gdpr_Cookie_Consent_Cookie_Custom_Ajax extends Lw_Gdpr_Cookie_Consent_C
 		);
 		if ( isset( $_POST['cookie_arr'] ) ) {
 			check_admin_referer( 'lwgdpr_cookie_custom', 'security' );
-			$cookie_arr = gdprcc_clean( wp_unslash( $_POST['cookie_arr'] ) ); // phpcs:ignore input var ok, CSRF ok, sanitization ok.
+			$cookie_arr = lwgdprcc_clean( wp_unslash( $_POST['cookie_arr'] ) ); // phpcs:ignore input var ok, CSRF ok, sanitization ok.
 			$flag       = 0;
 			foreach ( $cookie_arr as $cookie ) {
 				$cid       = isset( $cookie['cid'] ) ? sanitize_text_field( $cookie['cid'] ) : '';
