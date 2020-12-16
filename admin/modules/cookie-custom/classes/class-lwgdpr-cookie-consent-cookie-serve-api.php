@@ -2,7 +2,7 @@
 /**
  * The cookie api functionality of the plugin.
  *
- * @link       https://www.localweb.it//
+ * @link       https://www.localweb.it/
  * @since      1.0
  *
  * @package    Lw_Gdpr_Cookie_Consent

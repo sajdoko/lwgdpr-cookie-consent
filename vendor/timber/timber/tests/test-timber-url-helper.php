@@ -54,7 +54,7 @@
             $this->assertFalse(Timber\URLHelper::starts_with($haystack, $nope));
         }
 
-        function testFileSystemToURLWithWPML() {
+        function testFileSystemToURHFithWPML() {
             self::_setLanguage();
             add_filter('site_url', array($this, 'addWPMLHomeFilterForRegExTest'), 10, 2);
             $image = TestTimberImage::copyTestImage();
@@ -88,7 +88,7 @@
             add_filter('home_url', array($this, 'addWPMLHomeFilter'), 10, 2);
         }
 
-        function testFileSystemToURLWithWPMLPrefix() {
+        function testFileSystemToURHFithWPMLPrefix() {
             self::_setupWPMLDirectory();
             $image = TestTimberImage::copyTestImage();
             $url = Timber\URLHelper::file_system_to_url($image);
@@ -209,7 +209,7 @@
         	$this->assertFalse(TimberURLHelper::is_local('http://wordpress.org'));
         }
 
-        function testCurrentURLWithServerPort() {
+        function testCurrentURHFithServerPort() {
             $old_port = $_SERVER['SERVER_PORT'];
             $_SERVER['SERVER_PORT'] = 3000;
             if (!isset($_SERVER['SERVER_NAME'])){

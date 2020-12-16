@@ -2,7 +2,7 @@
  * All of the CSS for your public-facing functionality should be
  * included in this file.
  */
-div:focus {
+ div:focus {
 	outline: none;
 }
 
@@ -142,7 +142,7 @@ div:focus {
 	margin-top:5px;
 	align-self: center;
 }
-#cookie_action_settings {
+#cookie_action_accept_all {
 	float: right;
 }
 #cookie_action_close_banner {
@@ -488,7 +488,7 @@ Bootstrap CSS for frontend UI
 
 @media (min-width: 576px) {
 	.modal-dialog {
-		max-width: 500px;
+		max-width: 600px;
 		margin: 1.75rem auto;
 	}
 	#lwgdpr-ccpa-modal .modal-dialog {

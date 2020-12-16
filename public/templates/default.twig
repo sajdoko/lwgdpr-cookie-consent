@@ -34,14 +34,6 @@
             </div>
             <div class="lwgdpr group-description-buttons">
                 {% if button_accept_is_on %}
-                    <a id="cookie_action_accept_all" class="{{ button_accept_classes }}" tabindex="0" aria-label="Accept All" href="#"
-                            {% if button_accept_action == 'CONSTANT_OPEN_URL' %}
-                                href="{{ button_accept_url }}"
-                                {% if button_accept_new_win %}
-                                    target="_blank"
-                                {% endif %}
-                            {% endif %}
-                       data-lwgdpr_action="accept_all" style="color: rgb(255, 255, 255); background-color: rgb(24, 163, 0);">{{ __('Accetta Tutti', 'lwgdpr-cookie-consent' ) }}</a>
                     <a id="cookie_action_accept" class="{{ button_accept_classes }}" tabindex="0" aria-label="Accept" href="#"
                             {% if button_accept_action == 'CONSTANT_OPEN_URL' %}
                                 href="{{ button_accept_url }}"
@@ -49,7 +41,7 @@
                                     target="_blank"
                                 {% endif %}
                             {% endif %}
-                       data-lwgdpr_action="accept" >{{ __( button_accept_text, 'lwgdpr-cookie-consent' ) }}</a>
+                       data-lwgdpr_action="accept" style="color: #fff !important;; background-color: #004a99 !important;">{{ __( button_accept_text, 'lwgdpr-cookie-consent' ) }}</a>
                 {% endif %}
                 {% if button_decline_is_on %}
                     <a id="cookie_action_reject" class="{{ button_decline_classes }}" tabindex="0" aria-label="Reject" href="#"
@@ -72,6 +64,16 @@
                                 data-lwgdpr_action="settings" data-toggle="modal" data-target="#lwgdpr-modal"
                             {% endif %}
                     >{{ __( button_settings_text, 'lwgdpr-cookie-consent' ) }}</a>
+                {% endif %}
+                {% if button_accept_is_on %}
+                    <a id="cookie_action_accept_all" class="{{ button_accept_classes }}" tabindex="0" aria-label="Accept All" href="#"
+                            {% if button_accept_action == 'CONSTANT_OPEN_URL' %}
+                                href="{{ button_accept_url }}"
+                                {% if button_accept_new_win %}
+                                    target="_blank"
+                                {% endif %}
+                            {% endif %}
+                       data-lwgdpr_action="accept_all" style="color: #fff !important;; background-color: #18a300 !important;">{{ __('ACCETTA TUTTI I COOKIE', 'lwgdpr-cookie-consent' ) }}</a>
                 {% endif %}
             </div>
         </div>
