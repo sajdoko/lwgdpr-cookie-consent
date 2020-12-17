@@ -512,6 +512,7 @@ GDPR_CCPA_COOKIE_EXPIRE = (typeof GDPR_CCPA_COOKIE_EXPIRE !== 'undefined' ? GDPR
 				this.confirm_button.css('background-color', this.settings.button_confirm_button_color);
 			}
 
+			
 			/* [wpl_cookie_link] */
 			this.main_link.css('color', this.settings.button_readmore_link_color);
 			if (this.settings.button_readmore_as_button) {
