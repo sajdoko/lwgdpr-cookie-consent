@@ -4,7 +4,7 @@ Tags: GDPR, cookies, eu cookie law, cookie consent, eu privacy, privacy
 Requires at least: 3.3.1
 Tested up to: 5.6
 Stable tag: 1.0.1
-Requires PHP: 7.0
+Requires PHP: 5.6
 License: GPLv3
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
