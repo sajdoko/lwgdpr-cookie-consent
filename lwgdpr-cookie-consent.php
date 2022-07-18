@@ -8,13 +8,13 @@
  *
  * @wordpress-plugin
  * Plugin Name:       LWGDPR Cookie Consent
- * Plugin URI:        https://www.localweb.it/
+ * Plugin URI:        https://github.com/sajdoko/lwgdpr-cookie-consent
  * Description:       Soluzione conforme al GDPR per informare gli utenti che il sito Web utilizza i cookie, con la possibilità di bloccare gli script prima del consenso.
- * Version:           1.0.1
- * Author:            Local Web S.R.L
+ * Version:           1.1.0
+ * Author:            Sajmir Doko
  * Author URI:        https://www.localweb.it/
- * License:           GPL-2.0+
- * License URI:       http://www.gnu.org/licenses/gpl-2.0.txt
+ * License:           GPLv3
+ * License URI:       http://www.gnu.org/licenses/gpl-3.0.html
  * Text Domain:       lwgdpr-cookie-consent
  * Domain Path:       /languages
  */
@@ -39,7 +39,7 @@ define( 'LW_GDPR_COOKIE_CONSENT_PLUGIN_URL', plugin_dir_url( __FILE__ ) );
 /**
  * Currently plugin version.
  */
-define( 'LW_GDPR_COOKIE_CONSENT_VERSION', '1.0.1' );
+define( 'LW_GDPR_COOKIE_CONSENT_VERSION', '1.1.0' );
 define( 'LW_GDPR_COOKIE_CONSENT_PLUGIN_DEVELOPMENT_MODE', false );
 define( 'LW_GDPR_COOKIE_CONSENT_PLUGIN_BASENAME', plugin_basename( __FILE__ ) );
 define( 'LW_GDPR_COOKIE_CONSENT_PLUGIN_PATH', plugin_dir_path( __FILE__ ) );
