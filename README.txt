@@ -3,7 +3,7 @@ Contributors: sajdoko
 Tags: GDPR, cookies, eu cookie law, cookie consent, eu privacy, privacy
 Requires at least: 3.3.1
 Tested up to: 6.0.1
-Stable tag: 1.1.0
+Stable tag: 1.2.0
 Requires PHP: 7.0
 License: GPLv3
 License URI: http://www.gnu.org/licenses/gpl-3.0.html

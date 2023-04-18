@@ -443,7 +443,7 @@ class Lw_Gdpr_Cookie_Consent {
 			'popup_template'                  => 'popup-default',
 			'widget_template'                 => 'widget-default',
 
-			'button_accept_text'              => 'Accetta',
+			'button_accept_text'              => __( 'Accetta', 'lwgdpr-cookie-consent' ),
 			'button_accept_url'               => '#',
 			'button_accept_action'            => '#cookie_action_close_header',
 			'button_accept_link_color'        => '#fff',
@@ -453,7 +453,7 @@ class Lw_Gdpr_Cookie_Consent {
 			'button_accept_button_size'       => 'medium',
 			'button_accept_is_on'             => true,
 
-			'button_readmore_text'            => 'Leggi di più',
+			'button_readmore_text'            => __( 'Leggi di più', 'lwgdpr-cookie-consent' ),
 			'button_readmore_url'             => '#',
 			'button_readmore_action'          => 'CONSTANT_OPEN_URL',
 			'button_readmore_link_color'      => '#359bf5',
@@ -466,7 +466,7 @@ class Lw_Gdpr_Cookie_Consent {
 			'button_readmore_wp_page'         => false,
 			'button_readmore_page'            => '0',
 
-			'button_decline_text'             => 'Rifiuta',
+			'button_decline_text'             => __( 'Rifiuta', 'lwgdpr-cookie-consent' ),
 			'button_decline_url'              => '#',
 			'button_decline_action'           => '#cookie_action_close_header_reject',
 			'button_decline_link_color'       => '#fff',
@@ -476,7 +476,7 @@ class Lw_Gdpr_Cookie_Consent {
 			'button_decline_button_size'      => 'medium',
 			'button_decline_is_on'            => true,
 
-			'button_settings_text'            => 'Impostazioni dei cookie',
+			'button_settings_text'            => __( 'Impostazioni dei cookie', 'lwgdpr-cookie-consent' ),
 			'button_settings_url'             => '#',
 			'button_settings_action'          => '#cookie_action_settings',
 			'button_settings_link_color'      => '#fff',
@@ -526,7 +526,7 @@ class Lw_Gdpr_Cookie_Consent {
 			'delete_on_deactivation'          => false,
 
 			'show_again_position'             => 'left', // 'left' = left | 'right' = right.
-			'show_again_text'                 => 'Impostazioni dei cookie',
+			'show_again_text'                 => __( 'Impostazioni dei cookie', 'lwgdpr-cookie-consent' ),
 			'show_again_margin'               => '3',
 			'auto_hide_delay'                 => '10000',
 			'auto_scroll_offset'              => '10',
@@ -542,16 +542,16 @@ class Lw_Gdpr_Cookie_Consent {
 			'notify_position_horizontal'      => 'left', // 'left' = left | 'right' = right.
 			'text'                            => '#000',
 			'use_color_picker'                => true,
-			'bar_heading_text'                => 'Questo sito web utilizza i cookie',
+			'bar_heading_text'                => __( 'Questo sito web utilizza i cookie', 'lwgdpr-cookie-consent' ),
 			'cookie_bar_as'                   => 'banner', // banner | popup | widget.
 			'cookie_usage_for'                => 'lwgdpr',
 			'popup_overlay'                   => true,
-			'about_message'                   => addslashes( ( 'I cookie sono piccoli file di testo che possono essere utilizzati dai siti web per rendere più efficiente l\'esperienza per l\'utente.
-La legge afferma che possiamo memorizzare i cookie sul suo dispositivo se sono strettamente necessari per il funzionamento di questo sito. Per tutti gli altri tipi di cookie abbiamo bisogno del suo permesso.
-Questo sito utilizza diversi tipi di cookie. Alcuni cookie sono collocate da servizi di terzi che compaiono sulle nostre pagine.
-In qualsiasi momento è possibile modificare o revocare il proprio consenso dalla Dichiarazione dei cookie sul nostro sito Web.
-Scopra di più su chi siamo, come può contattarci e come trattiamo i dati personali nella nostra Informativa sulla privacy.
-Specifica l’ID del tuo consenso e la data di quando ci hai contattati per quanto riguarda il tuo consenso.' ) ),
+			'about_message'                   => addslashes( ( __( 'I cookie sono piccoli file di testo che possono essere utilizzati dai siti web per rendere più efficiente l\'esperienza per l\'utente.
+			La legge afferma che possiamo memorizzare i cookie sul suo dispositivo se sono strettamente necessari per il funzionamento di questo sito. Per tutti gli altri tipi di cookie abbiamo bisogno del suo permesso.
+			Questo sito utilizza diversi tipi di cookie. Alcuni cookie sono collocate da servizi di terzi che compaiono sulle nostre pagine.
+			In qualsiasi momento è possibile modificare o revocare il proprio consenso dalla Dichiarazione dei cookie sul nostro sito Web.
+			Scopra di più su chi siamo, come può contattarci e come trattiamo i dati personali nella nostra Informativa sulla privacy.
+			Specifica l’ID del tuo consenso e la data di quando ci hai contattati per quanto riguarda il tuo consenso.', 'lwgdpr-cookie-consent' ) ) ),
 			'header_scripts'                  => '',
 			'body_scripts'                    => '',
 			'footer_scripts'                  => '',

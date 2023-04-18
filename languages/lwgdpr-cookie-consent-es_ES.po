@@ -1,0 +1,1180 @@
+# Copyright (C) 2023 Sajmir Doko
+# This file is distributed under the GPLv3.
+msgid ""
+msgstr ""
+"Project-Id-Version: LWGDPR Cookie Consent 1.2.0\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/lwgdpr-cookie-"
+"consent\n"
+"POT-Creation-Date: 2023-04-18 16:56+0200\n"
+"PO-Revision-Date: 2023-04-18 17:12+0200\n"
+"Last-Translator: Sajmir Doko <sajdoko@gmail.com>\n"
+"Language-Team: Sajmir Doko <sajdoko@gmail.com>\n"
+"Language: es_ES\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Textdomain-Support: yes\n"
+"X-Domain: lwgdpr-cookie-consent\n"
+"X-Generator: Poedit 3.2.2\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e;esc_html_e;esc_html_x:1,2c;esc_html__;"
+"esc_attr_e;esc_attr_x:1,2c;esc_attr__;_ex:1,2c;_nx:4c,1,2;_nx_noop:4c,1,2;"
+"_x:1,2c;_n:1,2;_n_noop:1,2;__ngettext:1,2;__ngettext_noop:1,2;_c,_nc:4c,1,2\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: vendor\n"
+
+#: public/templates/default.twig:76
+msgid "ACCETTA TUTTI I COOKIE"
+msgstr "ACEPTAR TODAS LAS COOKIES"
+
+#: admin/class-lwgdpr-cookie-consent-admin.php:171
+msgid "Cookies"
+msgstr ""
+
+#: admin/class-lwgdpr-cookie-consent-admin.php:172
+#: includes/class-lwgdpr-cookie-consent-i18n.php:50
+msgid "Cookie Settings"
+msgstr ""
+
+#: admin/class-lwgdpr-cookie-consent-admin.php:185
+#: admin/class-lwgdpr-cookie-consent-admin.php:232
+msgid "You do not have sufficient permission to perform this operation"
+msgstr ""
+
+#: admin/class-lwgdpr-cookie-consent-admin.php:215
+msgid "Settings Updated."
+msgstr ""
+
+#: admin/class-lwgdpr-cookie-consent-admin.php:346
+msgid "1 Ora"
+msgstr "1 Hora"
+
+#: admin/class-lwgdpr-cookie-consent-admin.php:347
+msgid "1 Giorno"
+msgstr "1 Día"
+
+#: admin/class-lwgdpr-cookie-consent-admin.php:348
+msgid "1 Settimana"
+msgstr "1 Semana"
+
+#: admin/class-lwgdpr-cookie-consent-admin.php:349
+msgid "1 Mese"
+msgstr "1 Mes"
+
+#: admin/class-lwgdpr-cookie-consent-admin.php:350
+msgid "3 Mesi"
+msgstr "3 Meses"
+
+#: admin/class-lwgdpr-cookie-consent-admin.php:351
+msgid "6 Mesi"
+msgstr "6 Meses"
+
+#: admin/class-lwgdpr-cookie-consent-admin.php:352
+msgid "1 Anno"
+msgstr "1 Año"
+
+#: admin/class-lwgdpr-cookie-consent-admin.php:365
+msgid "ePrivacy"
+msgstr ""
+
+#: admin/class-lwgdpr-cookie-consent-admin.php:366
+msgid "GDPR"
+msgstr ""
+
+#: admin/class-lwgdpr-cookie-consent-admin.php:367
+msgid "CCPA"
+msgstr ""
+
+#: admin/class-lwgdpr-cookie-consent-admin.php:368
+msgid "GDPR & CCPA"
+msgstr ""
+
+#: admin/class-lwgdpr-cookie-consent-admin.php:381
+msgid "Banner"
+msgstr ""
+
+#: admin/class-lwgdpr-cookie-consent-admin.php:382
+#: admin/views/admin-display-buttons.php:234
+#: admin/views/admin-display-buttons.php:237
+msgid "Popup"
+msgstr ""
+
+#: admin/class-lwgdpr-cookie-consent-admin.php:383
+msgid "Widget"
+msgstr ""
+
+#: admin/class-lwgdpr-cookie-consent-admin.php:397
+msgid "Large"
+msgstr ""
+
+#: admin/class-lwgdpr-cookie-consent-admin.php:398
+msgid "Medium"
+msgstr ""
+
+#: admin/class-lwgdpr-cookie-consent-admin.php:399
+msgid "Small"
+msgstr ""
+
+#: admin/class-lwgdpr-cookie-consent-admin.php:434
+#: admin/views/admin-display-buttons.php:154
+msgid "Close Header"
+msgstr ""
+
+#: admin/class-lwgdpr-cookie-consent-admin.php:435
+msgid "Open URL"
+msgstr ""
+
+#: admin/js/blocks/lwgdpr-admin-block.js:19
+msgid "GDPR Cookie Details"
+msgstr ""
+
+#: admin/js/blocks/lwgdpr-admin-block.js:20
+msgid "common"
+msgstr ""
+
+#: admin/js/blocks/lwgdpr-admin-block.js:22
+msgid "lwgdpr"
+msgstr ""
+
+#: admin/js/blocks/lwgdpr-admin-block.js:23
+msgid "cookie"
+msgstr ""
+
+#: admin/js/blocks/lwgdpr-admin-block.js:24
+msgid "cookie links"
+msgstr ""
+
+#: admin/modules/cookie-custom/class-lwgdpr-cookie-consent-cookie-custom.php:57
+msgid "Incomplete"
+msgstr ""
+
+#: admin/modules/cookie-custom/class-lwgdpr-cookie-consent-cookie-custom.php:58
+msgid "Completed"
+msgstr ""
+
+#: admin/modules/cookie-custom/class-lwgdpr-cookie-consent-cookie-custom.php:59
+msgid "Stopped"
+msgstr ""
+
+#: admin/modules/cookie-custom/class-lwgdpr-cookie-consent-cookie-custom.php:77
+msgid "About Cookies Message"
+msgstr ""
+
+#: admin/modules/cookie-custom/class-lwgdpr-cookie-consent-cookie-custom.php:96
+msgid "Cookie List"
+msgstr ""
+
+#: admin/modules/cookie-custom/class-lwgdpr-cookie-consent-cookie-custom.php:169
+#: includes/class-lwgdpr-cookie-consent-i18n.php:35
+msgid "HTTP Cookie"
+msgstr ""
+
+#: admin/modules/cookie-custom/class-lwgdpr-cookie-consent-cookie-custom.php:170
+#: includes/class-lwgdpr-cookie-consent-i18n.php:36
+msgid "HTML Local Storage"
+msgstr ""
+
+#: admin/modules/cookie-custom/class-lwgdpr-cookie-consent-cookie-custom.php:171
+#: includes/class-lwgdpr-cookie-consent-i18n.php:37
+msgid "Flash Local Shared Object"
+msgstr ""
+
+#: admin/modules/cookie-custom/class-lwgdpr-cookie-consent-cookie-custom.php:172
+#: includes/class-lwgdpr-cookie-consent-i18n.php:38
+msgid "Pixel Tracker"
+msgstr ""
+
+#: admin/modules/cookie-custom/class-lwgdpr-cookie-consent-cookie-custom.php:173
+#: includes/class-lwgdpr-cookie-consent-i18n.php:39
+msgid "IndexedDB"
+msgstr ""
+
+#: admin/modules/cookie-custom/class-lwgdpr-cookie-consent-cookie-custom.php:360
+msgid "lwgdpr_user_preference"
+msgstr ""
+
+#: admin/modules/cookie-custom/class-lwgdpr-cookie-consent-cookie-custom.php:362
+#: admin/modules/cookie-custom/class-lwgdpr-cookie-consent-cookie-custom.php:371
+msgid "365"
+msgstr ""
+
+#: admin/modules/cookie-custom/class-lwgdpr-cookie-consent-cookie-custom.php:363
+#: admin/modules/cookie-custom/class-lwgdpr-cookie-consent-cookie-custom.php:372
+msgid "HTTP"
+msgstr ""
+
+#: admin/modules/cookie-custom/class-lwgdpr-cookie-consent-cookie-custom.php:364
+#: admin/modules/cookie-custom/class-lwgdpr-cookie-consent-cookie-custom.php:373
+#: admin/modules/cookie-custom/classes/class-lwgdpr-cookie-consent-cookie-serve-api.php:40
+msgid "Necessario"
+msgstr "Necesario"
+
+#: admin/modules/cookie-custom/class-lwgdpr-cookie-consent-cookie-custom.php:365
+#: admin/modules/cookie-custom/class-lwgdpr-cookie-consent-cookie-custom.php:374
+msgid "1"
+msgstr ""
+
+#: admin/modules/cookie-custom/class-lwgdpr-cookie-consent-cookie-custom.php:366
+#: admin/modules/cookie-custom/class-lwgdpr-cookie-consent-cookie-custom.php:375
+msgid "Preferenze di consenso sui Cookie."
+msgstr "Preferencias de consentimiento de cookies."
+
+#: admin/modules/cookie-custom/class-lwgdpr-cookie-consent-cookie-custom.php:369
+msgid "lwgdpr_viewed_cookie"
+msgstr ""
+
+#: admin/modules/cookie-custom/classes/class-lwgdpr-cookie-consent-cookie-custom-ajax.php:36
+msgid "Unable to handle your request."
+msgstr ""
+
+#: admin/modules/cookie-custom/classes/class-lwgdpr-cookie-consent-cookie-custom-ajax.php:59
+msgid "Unable to add cookie"
+msgstr ""
+
+#: admin/modules/cookie-custom/classes/class-lwgdpr-cookie-consent-cookie-custom-ajax.php:88
+msgid "Cookie added successfully"
+msgstr ""
+
+#: admin/modules/cookie-custom/classes/class-lwgdpr-cookie-consent-cookie-custom-ajax.php:103
+msgid "Unable to update cookies"
+msgstr ""
+
+#: admin/modules/cookie-custom/classes/class-lwgdpr-cookie-consent-cookie-custom-ajax.php:150
+msgid "No data was modified on the form."
+msgstr ""
+
+#: admin/modules/cookie-custom/classes/class-lwgdpr-cookie-consent-cookie-custom-ajax.php:155
+msgid "Cookies updated successfully"
+msgstr ""
+
+#: admin/modules/cookie-custom/classes/class-lwgdpr-cookie-consent-cookie-custom-ajax.php:170
+msgid "Unable to delete cookie"
+msgstr ""
+
+#: admin/modules/cookie-custom/classes/class-lwgdpr-cookie-consent-cookie-custom-ajax.php:181
+msgid "Cookie deleted successfully"
+msgstr ""
+
+#: admin/modules/cookie-custom/classes/class-lwgdpr-cookie-consent-cookie-custom-ajax.php:205
+msgid "Success"
+msgstr ""
+
+#: admin/modules/cookie-custom/classes/class-lwgdpr-cookie-consent-cookie-serve-api.php:45
+msgid ""
+"I cookie necessari aiutano a rendere fruibile un sito web abilitando le "
+"funzioni di base come la navigazione della pagina e lo accesso alle aree "
+"protette del sito. Il sito web non può funzionare correttamente senza questi "
+"cookie."
+msgstr ""
+"Las cookies necesarias ayudan a que un sitio web sea utilizable al habilitar "
+"funciones básicas como la navegación de la página y el acceso a áreas "
+"protegidas del sitio. El sitio web no puede funcionar correctamente sin "
+"estas cookies."
+
+#: admin/modules/cookie-custom/classes/class-lwgdpr-cookie-consent-cookie-serve-api.php:51
+msgid "Preferenze"
+msgstr "Preferencias"
+
+#: admin/modules/cookie-custom/classes/class-lwgdpr-cookie-consent-cookie-serve-api.php:56
+msgid ""
+"I cookie di preferenza consentono a un sito web di ricordare le informazioni "
+"che cambiano il modo in cui il sito web si comporta o appare, come la tua "
+"lingua preferita o la regione in cui ti trovi."
+msgstr ""
+"Las cookies de preferencia permiten que un sitio web recuerde información "
+"que cambia la forma en que el sitio web se comporta o aparece, como tu "
+"idioma preferido o la región en la que te encuentras."
+
+#: admin/modules/cookie-custom/classes/class-lwgdpr-cookie-consent-cookie-serve-api.php:62
+msgid "Analitici"
+msgstr "Analítico"
+
+#: admin/modules/cookie-custom/classes/class-lwgdpr-cookie-consent-cookie-serve-api.php:67
+msgid ""
+"I cookie analitici aiutano i proprietari di siti web a capire come i "
+"visitatori interagiscono con i siti raccogliendo e riportando informazioni "
+"in modo anonimo."
+msgstr ""
+"Los cookies analíticos ayudan a los propietarios de sitios web a comprender "
+"cómo los visitantes interactúan con los sitios, recopilando y reportando "
+"información de forma anónima."
+
+#: admin/modules/cookie-custom/classes/class-lwgdpr-cookie-consent-cookie-serve-api.php:73
+#: includes/class-lwgdpr-cookie-consent-i18n.php:46
+msgid "Marketing"
+msgstr "Marketing"
+
+#: admin/modules/cookie-custom/classes/class-lwgdpr-cookie-consent-cookie-serve-api.php:78
+msgid ""
+"I cookie di marketing vengono utilizzati per monitorare i visitatori sui "
+"siti Web. La intenzione è quella di visualizzare annunci pertinenti e "
+"coinvolgenti per il singolo utente e quindi più preziosi per editori e "
+"inserzionisti di terze parti."
+msgstr ""
+"Los cookies de marketing se utilizan para rastrear a los visitantes en los "
+"sitios web. La intención es mostrar anuncios relevantes y atractivos para el "
+"usuario individual y, por lo tanto, más valiosos para los editores y "
+"anunciantes de terceros."
+
+#: admin/modules/cookie-custom/views/cookies.php:19
+msgid "Custom Cookies"
+msgstr ""
+
+#: admin/modules/cookie-custom/views/cookies.php:29
+msgid "Add New Cookie"
+msgstr ""
+
+#: admin/modules/cookie-custom/views/cookies.php:38
+#: admin/modules/cookie-custom/views/custom-cookie-list.php:29
+msgid "Cookie Name"
+msgstr ""
+
+#: admin/modules/cookie-custom/views/cookies.php:39
+#: admin/modules/cookie-custom/views/custom-cookie-list.php:30
+msgid "Cookie Domain"
+msgstr ""
+
+#: admin/modules/cookie-custom/views/cookies.php:48
+#: admin/modules/cookie-custom/views/custom-cookie-list.php:39
+msgid "Duration (in days/Session)"
+msgstr ""
+
+#: admin/modules/cookie-custom/views/cookies.php:51
+#: admin/modules/cookie-custom/views/custom-cookie-list.php:42
+msgid "Cookie Purpose"
+msgstr ""
+
+#: admin/modules/cookie-custom/views/cookies.php:53
+#: includes/class-lwgdpr-cookie-consent-i18n.php:44
+#: public/class-lwgdpr-cookie-consent-public.php:232
+#: public/class-lwgdpr-cookie-consent-public.php:241
+msgid "Cancel"
+msgstr ""
+
+#: admin/modules/cookie-custom/views/cookies.php:54
+msgid "Save"
+msgstr ""
+
+#: admin/modules/cookie-custom/views/custom-cookie-list.php:44
+msgid "Delete Cookie"
+msgstr ""
+
+#: admin/modules/policy-data/class-lwgdpr-cookie-consent-policy-data.php:49
+#: admin/modules/policy-data/class-lwgdpr-cookie-consent-policy-data.php:51
+msgid "Policy Data"
+msgstr ""
+
+#: admin/modules/policy-data/class-lwgdpr-cookie-consent-policy-data.php:50
+msgid "Policy Data List"
+msgstr ""
+
+#: admin/modules/policy-data/class-lwgdpr-cookie-consent-policy-data.php:52
+msgid "Add New"
+msgstr ""
+
+#: admin/modules/policy-data/class-lwgdpr-cookie-consent-policy-data.php:53
+msgid "Add New Policy Data"
+msgstr ""
+
+#: admin/modules/policy-data/class-lwgdpr-cookie-consent-policy-data.php:54
+msgid "Edit Policy Data"
+msgstr ""
+
+#: admin/modules/policy-data/class-lwgdpr-cookie-consent-policy-data.php:55
+msgid "New Policy Data"
+msgstr ""
+
+#: admin/modules/policy-data/class-lwgdpr-cookie-consent-policy-data.php:56
+msgid "View Policy Data"
+msgstr ""
+
+#: admin/modules/policy-data/class-lwgdpr-cookie-consent-policy-data.php:57
+msgid "Search Policy Data"
+msgstr ""
+
+#: admin/modules/policy-data/class-lwgdpr-cookie-consent-policy-data.php:58
+msgid "Nothing found"
+msgstr ""
+
+#: admin/modules/policy-data/class-lwgdpr-cookie-consent-policy-data.php:59
+msgid "Nothing found in Trash"
+msgstr ""
+
+#: admin/modules/policy-data/class-lwgdpr-cookie-consent-policy-data.php:155
+msgid "Company Name"
+msgstr ""
+
+#: admin/modules/policy-data/class-lwgdpr-cookie-consent-policy-data.php:156
+msgid "Policy Purpose"
+msgstr ""
+
+#: admin/modules/policy-data/class-lwgdpr-cookie-consent-policy-data.php:157
+msgid "Links"
+msgstr ""
+
+#: admin/modules/policy-data/class-lwgdpr-cookie-consent-policy-data.php:158
+msgid "Domain"
+msgstr ""
+
+#: admin/modules/policy-data/class-lwgdpr-cookie-consent-policy-data.php:210
+msgid "Import from CSV"
+msgstr ""
+
+#: admin/modules/policy-data/class-lwgdpr-cookie-consent-policy-data.php:234
+msgid "Export as CSV"
+msgstr ""
+
+#: admin/partials/lwgdpr-cookie-consent-admin-display.php:21
+msgid "Settings updated."
+msgstr ""
+
+#: admin/partials/lwgdpr-cookie-consent-admin-display.php:22
+msgid "Unable to update Settings."
+msgstr ""
+
+#: admin/partials/lwgdpr-cookie-consent-admin-display.php:29
+#: admin/views/admin-display-design.php:19
+#: admin/views/admin-display-general.php:19
+#: admin/views/admin-display-script-blocker.php:19
+msgid "General"
+msgstr ""
+
+#: admin/partials/lwgdpr-cookie-consent-admin-display.php:30
+msgid "Design"
+msgstr ""
+
+#: admin/partials/lwgdpr-cookie-consent-admin-display.php:31
+msgid "Buttons"
+msgstr ""
+
+#: admin/partials/lwgdpr-cookie-consent-admin-display.php:32
+msgid "Script Blocker"
+msgstr ""
+
+#: admin/views/admin-display-buttons.php:19
+msgid "Accept Button"
+msgstr ""
+
+#: admin/views/admin-display-buttons.php:20
+msgid "Decline Button"
+msgstr ""
+
+#: admin/views/admin-display-buttons.php:21
+msgid "Settings Button"
+msgstr ""
+
+#: admin/views/admin-display-buttons.php:22
+msgid "Read More Link"
+msgstr ""
+
+#: admin/views/admin-display-buttons.php:23
+msgid "Confirm Button"
+msgstr ""
+
+#: admin/views/admin-display-buttons.php:24
+msgid "Cancel Button"
+msgstr ""
+
+#: admin/views/admin-display-buttons.php:25
+msgid "Optout Link"
+msgstr ""
+
+#: admin/views/admin-display-buttons.php:38
+msgid ""
+"This button/link can be customized to either simply close the cookie bar, or "
+"follow a link. You can also customize the colors and styles, and show it as "
+"a link or a button."
+msgstr ""
+
+#: admin/views/admin-display-buttons.php:41
+#: admin/views/admin-display-buttons.php:109
+#: admin/views/admin-display-buttons.php:181
+#: admin/views/admin-display-buttons.php:253
+msgid "Enable"
+msgstr ""
+
+#: admin/views/admin-display-buttons.php:43
+#: admin/views/admin-display-buttons.php:111
+#: admin/views/admin-display-buttons.php:183
+#: admin/views/admin-display-buttons.php:223
+#: admin/views/admin-display-buttons.php:255
+#: admin/views/admin-display-buttons.php:314
+#: admin/views/admin-display-design.php:62
+#: admin/views/admin-display-general.php:38
+#: admin/views/admin-display-general.php:56
+#: admin/views/admin-display-general.php:98
+#: admin/views/admin-display-general.php:147
+#: admin/views/admin-display-general.php:154
+#: admin/views/admin-display-general.php:168
+#: admin/views/admin-display-general.php:183
+#: admin/views/admin-display-general.php:190
+#: admin/views/admin-display-general.php:197
+#: admin/views/admin-display-general.php:217
+#: admin/views/admin-display-general.php:225
+#: admin/views/admin-display-script-blocker.php:36
+msgid "On"
+msgstr ""
+
+#: admin/views/admin-display-buttons.php:44
+#: admin/views/admin-display-buttons.php:112
+#: admin/views/admin-display-buttons.php:184
+#: admin/views/admin-display-buttons.php:224
+#: admin/views/admin-display-buttons.php:256
+#: admin/views/admin-display-buttons.php:315
+#: admin/views/admin-display-design.php:63
+#: admin/views/admin-display-general.php:39
+#: admin/views/admin-display-general.php:57
+#: admin/views/admin-display-general.php:99
+#: admin/views/admin-display-general.php:148
+#: admin/views/admin-display-general.php:155
+#: admin/views/admin-display-general.php:169
+#: admin/views/admin-display-general.php:184
+#: admin/views/admin-display-general.php:191
+#: admin/views/admin-display-general.php:198
+#: admin/views/admin-display-general.php:218
+#: admin/views/admin-display-general.php:226
+#: admin/views/admin-display-script-blocker.php:37
+msgid "Off"
+msgstr ""
+
+#: admin/views/admin-display-buttons.php:48
+#: admin/views/admin-display-buttons.php:116
+#: admin/views/admin-display-buttons.php:188
+#: admin/views/admin-display-buttons.php:260
+#: admin/views/admin-display-buttons.php:338
+#: admin/views/admin-display-buttons.php:369
+#: admin/views/admin-display-buttons.php:400
+msgid "Text"
+msgstr ""
+
+#: admin/views/admin-display-buttons.php:54
+#: admin/views/admin-display-buttons.php:122
+#: admin/views/admin-display-buttons.php:194
+#: admin/views/admin-display-buttons.php:266
+#: admin/views/admin-display-buttons.php:344
+#: admin/views/admin-display-buttons.php:375
+#: admin/views/admin-display-buttons.php:406
+msgid "Text color"
+msgstr ""
+
+#: admin/views/admin-display-buttons.php:60
+#: admin/views/admin-display-buttons.php:128
+#: admin/views/admin-display-buttons.php:200
+#: admin/views/admin-display-buttons.php:272
+msgid "Show as"
+msgstr ""
+
+#: admin/views/admin-display-buttons.php:62
+#: admin/views/admin-display-buttons.php:130
+#: admin/views/admin-display-buttons.php:202
+#: admin/views/admin-display-buttons.php:274
+msgid "Button"
+msgstr ""
+
+#: admin/views/admin-display-buttons.php:63
+#: admin/views/admin-display-buttons.php:131
+#: admin/views/admin-display-buttons.php:203
+#: admin/views/admin-display-buttons.php:275
+msgid "Link"
+msgstr ""
+
+#: admin/views/admin-display-buttons.php:67
+#: admin/views/admin-display-buttons.php:135
+#: admin/views/admin-display-buttons.php:207
+#: admin/views/admin-display-buttons.php:279
+#: admin/views/admin-display-buttons.php:350
+#: admin/views/admin-display-buttons.php:381
+msgid "Background color"
+msgstr ""
+
+#: admin/views/admin-display-buttons.php:73
+#: admin/views/admin-display-buttons.php:141
+#: admin/views/admin-display-buttons.php:213
+#: admin/views/admin-display-buttons.php:285
+#: admin/views/admin-display-buttons.php:356
+#: admin/views/admin-display-buttons.php:387
+msgid "Size"
+msgstr ""
+
+#: admin/views/admin-display-buttons.php:81
+#: admin/views/admin-display-buttons.php:149
+msgid "Action"
+msgstr ""
+
+#: admin/views/admin-display-buttons.php:89
+#: admin/views/admin-display-buttons.php:161
+#: admin/views/admin-display-buttons.php:319
+msgid "URL"
+msgstr ""
+
+#: admin/views/admin-display-buttons.php:92
+#: admin/views/admin-display-buttons.php:164
+msgid "Button will only link to URL if Action = Open URL"
+msgstr ""
+
+#: admin/views/admin-display-buttons.php:97
+#: admin/views/admin-display-buttons.php:169
+#: admin/views/admin-display-buttons.php:326
+msgid "Open URL in new window?"
+msgstr ""
+
+#: admin/views/admin-display-buttons.php:99
+#: admin/views/admin-display-buttons.php:171
+#: admin/views/admin-display-buttons.php:328
+msgid "Yes"
+msgstr ""
+
+#: admin/views/admin-display-buttons.php:100
+#: admin/views/admin-display-buttons.php:172
+#: admin/views/admin-display-buttons.php:329
+msgid "No"
+msgstr ""
+
+#: admin/views/admin-display-buttons.php:221
+msgid "Display Cookies List on Frontend"
+msgstr ""
+
+#: admin/views/admin-display-buttons.php:228
+msgid "Cookie Settings Layout"
+msgstr ""
+
+#: admin/views/admin-display-buttons.php:235
+#: admin/views/admin-display-buttons.php:238
+msgid "Extended Banner"
+msgstr ""
+
+#: admin/views/admin-display-buttons.php:249
+msgid ""
+"This button/link can be used to provide a link out to your Privacy & Cookie "
+"Policy. You can customize it any way you like."
+msgstr ""
+
+#: admin/views/admin-display-buttons.php:293
+msgid "Page or Custom URL"
+msgstr ""
+
+#: admin/views/admin-display-buttons.php:295
+#: admin/views/admin-display-buttons.php:301
+msgid "Page"
+msgstr ""
+
+#: admin/views/admin-display-buttons.php:296
+msgid "Custom Link"
+msgstr ""
+
+#: admin/views/admin-display-buttons.php:312
+msgid "Synchronize with WordPress Policy Page"
+msgstr ""
+
+#: admin/views/admin-display-design.php:34
+msgid "Cookie Bar as"
+msgstr ""
+
+#: admin/views/admin-display-design.php:42
+#: admin/views/admin-display-design.php:67
+msgid "Cookie Bar Position"
+msgstr ""
+
+#: admin/views/admin-display-design.php:48
+#: admin/views/admin-display-design.php:51
+msgid "Bottom"
+msgstr ""
+
+#: admin/views/admin-display-design.php:49
+#: admin/views/admin-display-design.php:52
+msgid "Top"
+msgstr ""
+
+#: admin/views/admin-display-design.php:60
+msgid "Add Overlay"
+msgstr ""
+
+#: admin/views/admin-display-design.php:73
+#: admin/views/admin-display-design.php:76
+#: admin/views/admin-display-general.php:109
+#: admin/views/admin-display-general.php:112
+msgid "Left"
+msgstr ""
+
+#: admin/views/admin-display-design.php:74
+#: admin/views/admin-display-design.php:77
+#: admin/views/admin-display-general.php:110
+#: admin/views/admin-display-general.php:113
+msgid "Right"
+msgstr ""
+
+#: admin/views/admin-display-design.php:85
+msgid "On hide"
+msgstr ""
+
+#: admin/views/admin-display-design.php:91
+#: admin/views/admin-display-design.php:94
+msgid "Animate"
+msgstr ""
+
+#: admin/views/admin-display-design.php:92
+#: admin/views/admin-display-design.php:95
+msgid "Disappear"
+msgstr ""
+
+#: admin/views/admin-display-design.php:103
+msgid "Cookie Bar Color"
+msgstr ""
+
+#: admin/views/admin-display-design.php:109
+msgid "Cookie Bar Opacity"
+msgstr ""
+
+#: admin/views/admin-display-design.php:115
+msgid "Text Color"
+msgstr ""
+
+#: admin/views/admin-display-general.php:20
+#: admin/views/admin-display-general.php:96
+msgid "Show Again Tab"
+msgstr ""
+
+#: admin/views/admin-display-general.php:21
+msgid "Other"
+msgstr ""
+
+#: admin/views/admin-display-general.php:36
+msgid "Cookie Bar is currently"
+msgstr ""
+
+#: admin/views/admin-display-general.php:43
+msgid "Cookie Bar Usage for"
+msgstr ""
+
+#: admin/views/admin-display-general.php:54
+msgid "Enable IAB Transparency and Consent Framework (TCF)"
+msgstr ""
+
+#: admin/views/admin-display-general.php:58
+msgid ""
+"Compatibility for the customization of advertising tracking preferences in "
+"case of CCPA."
+msgstr ""
+
+#: admin/views/admin-display-general.php:62
+msgid "Message Heading"
+msgstr ""
+
+#: admin/views/admin-display-general.php:65
+msgid "Leave it blank, If you do not need a heading"
+msgstr ""
+
+#: admin/views/admin-display-general.php:69
+msgid "Message"
+msgstr ""
+
+#: admin/views/admin-display-general.php:75
+msgid "GDPR Message"
+msgstr ""
+
+#: admin/views/admin-display-general.php:81
+msgid "CCPA Message"
+msgstr ""
+
+#: admin/views/admin-display-general.php:103
+msgid "Show Again Tab Position"
+msgstr ""
+
+#: admin/views/admin-display-general.php:121
+msgid "Show Again Tab Margin (in percent)"
+msgstr ""
+
+#: admin/views/admin-display-general.php:127
+msgid "Show Again Text"
+msgstr ""
+
+#: admin/views/admin-display-general.php:145
+msgid "Autotick for Non-Necessary Cookies"
+msgstr ""
+
+#: admin/views/admin-display-general.php:152
+msgid "Auto Hide (Accept)"
+msgstr ""
+
+#: admin/views/admin-display-general.php:159
+msgid "Auto Hide Delay (in Milliseconds)"
+msgstr ""
+
+#: admin/views/admin-display-general.php:162
+msgid "Specify milliseconds e.g. 5000 = 5 seconds"
+msgstr ""
+
+#: admin/views/admin-display-general.php:166
+msgid "Auto Scroll (Accept)"
+msgstr ""
+
+#: admin/views/admin-display-general.php:170
+msgid "Use this option with discretion especially if you serve EU"
+msgstr ""
+
+#: admin/views/admin-display-general.php:174
+msgid "Auto Scroll Offset (in percent)"
+msgstr ""
+
+#: admin/views/admin-display-general.php:177
+msgid ""
+"Consent will be assumed after user scrolls more than the specified page "
+"height"
+msgstr ""
+
+#: admin/views/admin-display-general.php:181
+msgid "Reload after Scroll Accept"
+msgstr ""
+
+#: admin/views/admin-display-general.php:188
+msgid "Reload after Accept"
+msgstr ""
+
+#: admin/views/admin-display-general.php:195
+msgid "Reload after Decline"
+msgstr ""
+
+#: admin/views/admin-display-general.php:206
+msgid "Cookie Expiry"
+msgstr ""
+
+#: admin/views/admin-display-general.php:211
+msgid "The amount of time that the cookie should be stored for."
+msgstr ""
+
+#: admin/views/admin-display-general.php:215
+msgid "Delete Plugin data on Deactivation"
+msgstr ""
+
+#: admin/views/admin-display-general.php:219
+msgid "Enable if you want all plugin data to be deleted on deactivation."
+msgstr ""
+
+#: admin/views/admin-display-general.php:223
+msgid "Show Credits"
+msgstr ""
+
+#: admin/views/admin-display-save-button.php:23
+msgid "Save All Cookies"
+msgstr ""
+
+#: admin/views/admin-display-save-button.php:32
+msgid "Update"
+msgstr ""
+
+#: admin/views/admin-display-script-blocker.php:34
+msgid "Script Blocker is currently"
+msgstr ""
+
+#: admin/views/admin-display-script-blocker.php:41
+msgid "Custom scripts"
+msgstr ""
+
+#: admin/views/admin-display-script-blocker.php:43
+msgid ""
+"Enter non functional cookies javascript code here (for e.g. Google "
+"Analytics) to be used after the consent is accepted."
+msgstr ""
+
+#: admin/views/admin-display-script-blocker.php:47
+msgid "Header Scripts"
+msgstr ""
+
+#: admin/views/admin-display-script-blocker.php:50
+msgid ""
+"These scripts will be printed in the head section on all pages and/or posts."
+msgstr ""
+
+#: admin/views/admin-display-script-blocker.php:54
+msgid "Body Scripts"
+msgstr ""
+
+#: admin/views/admin-display-script-blocker.php:57
+msgid ""
+"These scripts will be printed just below the opening body tag on all pages "
+"and/or posts."
+msgstr ""
+
+#: admin/views/admin-display-script-blocker.php:61
+msgid "Footer Scripts"
+msgstr ""
+
+#: admin/views/admin-display-script-blocker.php:64
+msgid ""
+"These scripts will be printed above the closing body tag on all pages and/or "
+"posts."
+msgstr ""
+
+#: admin/views/lwgdpr-policies-import-page.php:18
+msgid "Import from a CSV file"
+msgstr ""
+
+#: admin/views/lwgdpr-policies-import-page.php:24
+msgid "Error during file upload."
+msgstr ""
+
+#: admin/views/lwgdpr-policies-import-page.php:27
+msgid "Cannot extract data from uploaded file or no file was uploaded."
+msgstr ""
+
+#: admin/views/lwgdpr-policies-import-page.php:30
+msgid "No posts was successfully imported."
+msgstr ""
+
+#: admin/views/lwgdpr-policies-import-page.php:33
+msgid "Some posts were successfully imported but some were not."
+msgstr ""
+
+#: admin/views/lwgdpr-policies-import-page.php:36
+msgid "Post import was successful."
+msgstr ""
+
+#: admin/views/lwgdpr-policies-import-page.php:47
+msgid "CSV File"
+msgstr ""
+
+#: admin/views/lwgdpr-policies-import-page.php:55
+msgid "Import"
+msgstr ""
+
+#: includes/class-lwgdpr-cookie-consent-i18n.php:40
+msgid "Read More"
+msgstr ""
+
+#: includes/class-lwgdpr-cookie-consent-i18n.php:41
+msgid "Decline"
+msgstr ""
+
+#: includes/class-lwgdpr-cookie-consent-i18n.php:42
+msgid "Accept"
+msgstr ""
+
+#: includes/class-lwgdpr-cookie-consent-i18n.php:43
+#: public/class-lwgdpr-cookie-consent-public.php:231
+#: public/class-lwgdpr-cookie-consent-public.php:240
+msgid "Confirm"
+msgstr ""
+
+#: includes/class-lwgdpr-cookie-consent-i18n.php:45
+msgid "Necessary"
+msgstr ""
+
+#: includes/class-lwgdpr-cookie-consent-i18n.php:47
+msgid "Analytics"
+msgstr ""
+
+#: includes/class-lwgdpr-cookie-consent-i18n.php:48
+msgid "Preferences"
+msgstr ""
+
+#: includes/class-lwgdpr-cookie-consent-i18n.php:49
+msgid "Unclassified"
+msgstr ""
+
+#: includes/class-lwgdpr-cookie-consent-i18n.php:51
+msgid ""
+"Necessary cookies help make a website usable by enabling basic functions "
+"like page navigation and access to secure areas of the website. The website "
+"cannot function properly without these cookies."
+msgstr ""
+
+#: includes/class-lwgdpr-cookie-consent-i18n.php:52
+msgid ""
+"Marketing cookies are used to track visitors across websites. The intention "
+"is to display ads that are relevant and engaging for the individual user and "
+"thereby more valuable for publishers and third party advertisers."
+msgstr ""
+
+#: includes/class-lwgdpr-cookie-consent-i18n.php:53
+msgid ""
+"Analytics cookies help website owners to understand how visitors interact "
+"with websites by collecting and reporting information anonymously."
+msgstr ""
+
+#: includes/class-lwgdpr-cookie-consent-i18n.php:54
+msgid ""
+"Preference cookies enable a website to remember information that changes the "
+"way the website behaves or looks, like your preferred language or the region "
+"that you are in."
+msgstr ""
+
+#: includes/class-lwgdpr-cookie-consent-i18n.php:55
+msgid ""
+"Unclassified cookies are cookies that we are in the process of classifying, "
+"together with the providers of individual cookies."
+msgstr ""
+
+#: includes/class-lwgdpr-cookie-consent-i18n.php:56
+msgid ""
+"I cookie sono piccoli file di testo che possono essere utilizzati dai siti "
+"web per rendere più efficiente l'esperienza per l'utente.\n"
+"\t\tLa legge afferma che possiamo memorizzare i cookie sul suo dispositivo "
+"se sono strettamente necessari per il funzionamento di questo sito. Per "
+"tutti gli altri tipi di cookie abbiamo bisogno del suo permesso.\n"
+"\t\tQuesto sito utilizza diversi tipi di cookie. Alcuni cookie sono "
+"collocate da servizi di terzi che compaiono sulle nostre pagine.\n"
+"\t\tIn qualsiasi momento è possibile modificare o revocare il proprio "
+"consenso dalla Dichiarazione dei cookie sul nostro sito Web.\n"
+"\t\tScopra di più su chi siamo, come può contattarci e come trattiamo i dati "
+"personali nella nostra Informativa sulla privacy.\n"
+"\t\tSpecifica l’ID del tuo consenso e la data di quando ci hai contattati "
+"per quanto riguarda il tuo consenso."
+msgstr ""
+"Las cookies son pequeños archivos de texto que los sitios web pueden "
+"utilizar para mejorar la eficiencia de la experiencia del usuario. \n"
+"\t\tLa ley establece que podemos almacenar cookies en su dispositivo si son "
+"estrictamente necesarias para el funcionamiento de este sitio. Para todos "
+"los demás tipos de cookies, necesitamos su permiso.\n"
+"\t\tEste sitio utiliza diferentes tipos de cookies. Algunas cookies son "
+"colocadas por servicios de terceros que aparecen en nuestras páginas. \n"
+"\t\tEn cualquier momento, puede modificar o revocar su consentimiento desde "
+"la Declaración de cookies en nuestro sitio web.\n"
+"\t\tObtenga más información sobre quiénes somos, cómo puede contactarnos y "
+"cómo tratamos los datos personales en nuestra Política de privacidad.\n"
+"\t\tPor favor, especifique su ID de consentimiento y la fecha en que nos "
+"contactó con respecto a su consentimiento."
+
+#: includes/class-lwgdpr-cookie-consent-i18n.php:62
+msgid "This website uses cookies"
+msgstr ""
+
+#: includes/class-lwgdpr-cookie-consent-i18n.php:63
+msgid ""
+"This website uses cookies to improve your experience. We'll assume you're ok "
+"with this, but you can opt-out if you wish."
+msgstr ""
+
+#: includes/class-lwgdpr-cookie-consent-i18n.php:64
+msgid ""
+"In case of sale of your personal information, you may opt out by using the "
+"link"
+msgstr ""
+
+#: includes/class-lwgdpr-cookie-consent-i18n.php:65
+msgid "Do Not Sell My Personal Information"
+msgstr ""
+
+#: includes/class-lwgdpr-cookie-consent-i18n.php:66
+#: public/class-lwgdpr-cookie-consent-public.php:230
+#: public/class-lwgdpr-cookie-consent-public.php:239
+msgid "Do you really wish to opt-out?"
+msgstr ""
+
+#: includes/class-lwgdpr-cookie-consent.php:446
+msgid "Accetta"
+msgstr "Aceptar"
+
+#: includes/class-lwgdpr-cookie-consent.php:456
+msgid "Leggi di più"
+msgstr "Leer más"
+
+#: includes/class-lwgdpr-cookie-consent.php:469
+msgid "Rifiuta"
+msgstr "Rechazar"
+
+#: includes/class-lwgdpr-cookie-consent.php:479
+#: includes/class-lwgdpr-cookie-consent.php:529
+msgid "Impostazioni dei cookie"
+msgstr "Configuración de cookies"
+
+#: includes/class-lwgdpr-cookie-consent.php:545
+msgid "Questo sito web utilizza i cookie"
+msgstr "Este sitio web utiliza cookies"
+
+#: includes/class-lwgdpr-cookie-consent.php:549
+msgid ""
+"I cookie sono piccoli file di testo che possono essere utilizzati dai siti "
+"web per rendere più efficiente l'esperienza per l'utente.\n"
+"\t\t\tLa legge afferma che possiamo memorizzare i cookie sul suo dispositivo "
+"se sono strettamente necessari per il funzionamento di questo sito. Per "
+"tutti gli altri tipi di cookie abbiamo bisogno del suo permesso.\n"
+"\t\t\tQuesto sito utilizza diversi tipi di cookie. Alcuni cookie sono "
+"collocate da servizi di terzi che compaiono sulle nostre pagine.\n"
+"\t\t\tIn qualsiasi momento è possibile modificare o revocare il proprio "
+"consenso dalla Dichiarazione dei cookie sul nostro sito Web.\n"
+"\t\t\tScopra di più su chi siamo, come può contattarci e come trattiamo i "
+"dati personali nella nostra Informativa sulla privacy.\n"
+"\t\t\tSpecifica l’ID del tuo consenso e la data di quando ci hai contattati "
+"per quanto riguarda il tuo consenso."
+msgstr ""
+"Las cookies son pequeños archivos de texto que los sitios web pueden "
+"utilizar para mejorar la eficiencia de la experiencia del usuario. \n"
+"\t\t\tLa ley establece que podemos almacenar cookies en su dispositivo si "
+"son estrictamente necesarias para el funcionamiento de este sitio. Para "
+"todos los demás tipos de cookies, necesitamos su permiso.\n"
+"\t\t\tEste sitio utiliza diferentes tipos de cookies. Algunas cookies son "
+"colocadas por servicios de terceros que aparecen en nuestras páginas. \n"
+"\t\t\tEn cualquier momento, puede modificar o revocar su consentimiento "
+"desde la Declaración de cookies en nuestro sitio web.\n"
+"\t\t\tObtenga más información sobre quiénes somos, cómo puede contactarnos y "
+"cómo tratamos los datos personales en nuestra Política de privacidad.\n"
+"\t\t\tPor favor, especifique su ID de consentimiento y la fecha en que nos "
+"contactó con respecto a su consentimiento."
+
+#: public/class-lwgdpr-cookie-consent-public.php:280
+#: public/class-lwgdpr-cookie-consent-public.php:288
+msgid "GDPR Cookie Consent Plugin"
+msgstr ""
+
+#: public/class-lwgdpr-cookie-consent-public.php:282
+msgid "CCPA Cookie Notice Plugin"
+msgstr ""
+
+#: public/class-lwgdpr-cookie-consent-public.php:284
+msgid "Cookie Notice Plugin"
+msgstr ""
+
+#: public/class-lwgdpr-cookie-consent-public.php:286
+msgid "GDPR & CCPA Notice plugin"
+msgstr ""
+
+#: public/class-lwgdpr-cookie-consent-public.php:292
+#, php-format
+msgid "Powered by %1$s"
+msgstr ""
+
+#: public/class-lwgdpr-cookie-consent-public.php:437
+msgid "Informazioni sui cookie"
+msgstr "Información sobre las cookies"
+
+#: public/class-lwgdpr-cookie-consent-public.php:438
+msgid "Dichiarazione sui cookie"
+msgstr "Declaración de cookies"
+
+#: public/class-lwgdpr-cookie-consent-public.php:439
+msgid "Sempre attivo"
+msgstr "Siempre activo"
+
+#: public/class-lwgdpr-cookie-consent-public.php:440
+msgid "Salva e accetta"
+msgstr "Guardar y aceptar"
+
+#: public/class-lwgdpr-cookie-consent-public.php:441
+msgid "Nome"
+msgstr "Nombre"
+
+#: public/class-lwgdpr-cookie-consent-public.php:442
+msgid "Dominio"
+msgstr "Dominio"
+
+#: public/class-lwgdpr-cookie-consent-public.php:443
+msgid "Scopo"
+msgstr "Alcance"
+
+#: public/class-lwgdpr-cookie-consent-public.php:444
+msgid "Scadenza"
+msgstr "Vencimiento"
+
+#: public/class-lwgdpr-cookie-consent-public.php:445
+msgid "Tipo"
+msgstr "Tipo"
+
+#: public/class-lwgdpr-cookie-consent-public.php:446
+msgid "Non utilizziamo cookie di questo tipo."
+msgstr "No utilizamos cookies de este tipo."
+
+#: public/class-lwgdpr-cookie-consent-public.php:447
+msgid "Acconsento all'uso dei seguenti cookie:"
+msgstr "Acepto el uso de las siguientes cookies:"

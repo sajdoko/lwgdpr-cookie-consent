@@ -37,45 +37,45 @@ if ( ! class_exists( 'Lw_Gdpr_Cookie_Consent_Cookie_Serve_Api' ) ) {
 			return json_decode(
 				'[{
 				"term_id": 1,
-				"name": "Necessario",
+				"name": "'.__( 'Necessario', 'lwgdpr-cookie-consent' ).'",
 				"slug": "necessary",
 				"term_group": 0,
 				"term_taxonomy_id": 1,
 				"taxonomy": "wplcookies-category",
-				"description": "I cookie necessari aiutano a rendere fruibile un sito web abilitando le funzioni di base come la navigazione della pagina e lo accesso alle aree protette del sito. Il sito web non può funzionare correttamente senza questi cookie.",
+				"description": "'.__( 'I cookie necessari aiutano a rendere fruibile un sito web abilitando le funzioni di base come la navigazione della pagina e lo accesso alle aree protette del sito. Il sito web non può funzionare correttamente senza questi cookie.', 'lwgdpr-cookie-consent' ).'",
 				"parent": 0,
 				"count": 100,
 				"filter": "raw"
 			}, {
 				"term_id": 2,
-				"name": "Preferenze",
+				"name": "'.__( 'Preferenze', 'lwgdpr-cookie-consent' ).'",
 				"slug": "preferences",
 				"term_group": 0,
 				"term_taxonomy_id": 2,
 				"taxonomy": "wplcookies-category",
-				"description": "I cookie di preferenza consentono a un sito web di ricordare le informazioni che cambiano il modo in cui il sito web si comporta o appare, come la tua lingua preferita o la regione in cui ti trovi.",
+				"description": "'.__( 'I cookie di preferenza consentono a un sito web di ricordare le informazioni che cambiano il modo in cui il sito web si comporta o appare, come la tua lingua preferita o la regione in cui ti trovi.', 'lwgdpr-cookie-consent' ).'",
 				"parent": 0,
 				"count": 45,
 				"filter": "raw"
 			}, {
 				"term_id": 3,
-				"name": "Analitici",
+				"name": "'.__( 'Analitici', 'lwgdpr-cookie-consent' ).'",
 				"slug": "analytics",
 				"term_group": 0,
 				"term_taxonomy_id": 4,
 				"taxonomy": "wplcookies-category",
-				"description": "I cookie analitici aiutano i proprietari di siti web a capire come i visitatori interagiscono con i siti raccogliendo e riportando informazioni in modo anonimo. ",
+				"description": "'.__( 'I cookie analitici aiutano i proprietari di siti web a capire come i visitatori interagiscono con i siti raccogliendo e riportando informazioni in modo anonimo.', 'lwgdpr-cookie-consent' ).'",
 				"parent": 0,
 				"count": 214,
 				"filter": "raw"
 			}, {
 				"term_id": 4,
-				"name": "Marketing",
+				"name": "'.__( 'Marketing', 'lwgdpr-cookie-consent' ).'",
 				"slug": "marketing",
 				"term_group": 0,
 				"term_taxonomy_id": 4,
 				"taxonomy": "wplcookies-category",
-				"description": "I cookie di marketing vengono utilizzati per monitorare i visitatori sui siti Web. La intenzione è quella di visualizzare annunci pertinenti e coinvolgenti per il singolo utente e quindi più preziosi per editori e inserzionisti di terze parti.",
+				"description": "'.__( 'I cookie di marketing vengono utilizzati per monitorare i visitatori sui siti Web. La intenzione è quella di visualizzare annunci pertinenti e coinvolgenti per il singolo utente e quindi più preziosi per editori e inserzionisti di terze parti.', 'lwgdpr-cookie-consent' ).'",
 				"parent": 0,
 				"count": 53,
 				"filter": "raw"
