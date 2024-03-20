@@ -1,8 +1,8 @@
 === LWGDPR Cookie Consent ===
 Contributors: sajdoko
-Tags: GDPR, cookies, eu cookie law, cookie consent, eu privacy, privacy
+Tags: GDPR, eu cookie law, cookie consent, eu privacy
 Requires at least: 3.3.1
-Tested up to: 6.0.1
+Tested up to: 6.4.3
 Stable tag: 1.2.0
 Requires PHP: 7.0
 License: GPLv3

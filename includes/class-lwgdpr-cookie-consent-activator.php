@@ -30,6 +30,13 @@ class Lw_Gdpr_Cookie_Consent_Activator {
 	 */
 	public static function activate() {
 
+    if (is_plugin_active('wp-fastest-cache/wpFastestCache.php')) {
+      // Exclude from cache 'lwgdpr_*' cookies
+      update_option( 'WpFastestCacheExclude', json_encode([["prefix" => "contain", "content" => "lwgdpr_", "type" => "cookie"]]));
+      if(isset($GLOBALS['wp_fastest_cache']) && method_exists($GLOBALS['wp_fastest_cache'], 'deleteCache')){
+        $GLOBALS['wp_fastest_cache']->deleteCache(true);
+      }
+    }
 	}
 
 }
