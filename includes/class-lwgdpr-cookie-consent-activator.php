@@ -30,13 +30,23 @@ class Lw_Gdpr_Cookie_Consent_Activator {
 	 */
 	public static function activate() {
 
+    if (is_plugin_active('italy-cookie-choices/italy-cookie-choices.php')) {
+      deactivate_plugins('italy-cookie-choices/italy-cookie-choices.php');
+    } elseif (is_plugin_inactive('italy-cookie-choices/italy-cookie-choices.php')) {
+      delete_plugins(array('italy-cookie-choices/italy-cookie-choices.php'));
+    }
+
     if (is_plugin_active('wp-fastest-cache/wpFastestCache.php')) {
-      // Exclude from cache 'lwgdpr_*' cookies
-      update_option( 'WpFastestCacheExclude', json_encode([["prefix" => "contain", "content" => "lwgdpr_", "type" => "cookie"]]));
       if(isset($GLOBALS['wp_fastest_cache']) && method_exists($GLOBALS['wp_fastest_cache'], 'deleteCache')){
         $GLOBALS['wp_fastest_cache']->deleteCache(true);
       }
     }
+
+		// Exclude from cache 'lwgdpr_*' cookies
+		$WpFastestCacheExclude = get_option('WpFastestCacheExclude', []);
+		$WpFastestCacheExclude = json_decode($WpFastestCacheExclude, true);
+		$WpFastestCacheExclude[] = ["prefix" => "contain", "content" => "lwgdpr_", "type" => "cookie"];
+		update_option('WpFastestCacheExclude', json_encode($WpFastestCacheExclude));
 	}
 
 }
