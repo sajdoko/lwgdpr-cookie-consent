@@ -457,7 +457,7 @@ class Lw_Gdpr_Cookie_Consent {
 			'button_accept_is_on'             => true,
 
 			'button_readmore_text'            => __( 'Leggi di più', 'lwgdpr-cookie-consent' ),
-			'button_readmore_url'             => '#',
+			'button_readmore_url'             => '/cookie-policy',
 			'button_readmore_action'          => 'CONSTANT_OPEN_URL',
 			'button_readmore_link_color'      => '#359bf5',
 			'button_readmore_button_color'    => '#333',
@@ -549,12 +549,7 @@ class Lw_Gdpr_Cookie_Consent {
 			'cookie_bar_as'                   => 'banner', // banner | popup | widget.
 			'cookie_usage_for'                => 'lwgdpr',
 			'popup_overlay'                   => true,
-			'about_message'                   => addslashes( ( __( 'I cookie sono piccoli file di testo che possono essere utilizzati dai siti web per rendere più efficiente l\'esperienza per l\'utente.
-			La legge afferma che possiamo memorizzare i cookie sul suo dispositivo se sono strettamente necessari per il funzionamento di questo sito. Per tutti gli altri tipi di cookie abbiamo bisogno del suo permesso.
-			Questo sito utilizza diversi tipi di cookie. Alcuni cookie sono collocate da servizi di terzi che compaiono sulle nostre pagine.
-			In qualsiasi momento è possibile modificare o revocare il proprio consenso dalla Dichiarazione dei cookie sul nostro sito Web.
-			Scopra di più su chi siamo, come può contattarci e come trattiamo i dati personali nella nostra Informativa sulla privacy.
-			Specifica l’ID del tuo consenso e la data di quando ci hai contattati per quanto riguarda il tuo consenso.', 'lwgdpr-cookie-consent' ) ) ),
+			'about_message'                   => addslashes( ( __( 'I cookie sono piccoli file di testo che possono essere utilizzati dai siti web per rendere più efficiente l’esperienza per l’utente. La legge afferma che possiamo memorizzare i cookie sul suo dispositivo se sono strettamente necessari per il funzionamento di questo sito. Per tutti gli altri tipi di cookie abbiamo bisogno del suo permesso. Questo sito utilizza diversi tipi di cookie. Alcuni cookie sono collocate da servizi di terzi che compaiono sulle nostre pagine. In qualsiasi momento è possibile modificare o revocare il proprio consenso dalla Dichiarazione dei cookie sul nostro sito Web. Scopra di più su chi siamo, come può contattarci e come trattiamo i dati personali nella nostra Informativa sulla privacy. Specifica l’ID del tuo consenso e la data di quando ci hai contattati per quanto riguarda il tuo consenso.', 'lwgdpr-cookie-consent' ) ) ),
 			'header_scripts'                  => '',
 			'body_scripts'                    => '',
 			'footer_scripts'                  => '',
