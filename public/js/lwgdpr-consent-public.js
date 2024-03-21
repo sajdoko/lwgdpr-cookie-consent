@@ -1078,7 +1078,7 @@ GDPR_CCPA_COOKIE_EXPIRE = (typeof GDPR_CCPA_COOKIE_EXPIRE !== 'undefined' ? GDPR
 					}
 				},
 				renderScripts: function () {
-					let $scripts = document.querySelectorAll('noscript[data-wpl-class="wpl-blocker-script"]');
+					let $scripts = document.querySelectorAll('script[data-wpl-class="wpl-blocker-script"]');
 					if ($scripts.length > 0) {
 						let runList = []
 						let typeAttr

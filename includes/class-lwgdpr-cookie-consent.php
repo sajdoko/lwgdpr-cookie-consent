@@ -189,6 +189,9 @@ class Lw_Gdpr_Cookie_Consent {
 			$this->loader->add_action( 'admin_menu', $plugin_admin, 'admin_menu', 5 ); /* Adding admin menu */
 			$this->loader->add_action( 'admin_enqueue_scripts', $plugin_admin, 'enqueue_styles' );
 			$this->loader->add_action( 'admin_enqueue_scripts', $plugin_admin, 'enqueue_scripts' );
+
+			$this->loader->add_action('wp_ajax_lwgdpr_export_settings', $plugin_admin, 'lwgdpr_export_settings');
+			$this->loader->add_action('wp_ajax_lwgdpr_import_settings', $plugin_admin, 'lwgdpr_import_settings');
 		}
 	}
 

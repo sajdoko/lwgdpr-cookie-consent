@@ -19,6 +19,7 @@ $general_sub_tab = array(
 	'settings-general'   => __( 'General', 'lwgdpr-cookie-consent' ),
 	'show-again-general' => __( 'Show Again Tab', 'lwgdpr-cookie-consent' ),
 	'other-general'      => __( 'Other', 'lwgdpr-cookie-consent' ),
+	'import-export-settings-general'      => __( 'Import/Export Settings', 'lwgdpr-cookie-consent' ),
 );
 $general_sub_tab = apply_filters( 'gdprcookieconsent_general_sub_tabs', $general_sub_tab );
 ?>
@@ -224,6 +225,24 @@ $general_sub_tab = apply_filters( 'gdprcookieconsent_general_sub_tabs', $general
 					<td>
 						<input type="radio" id="show_credits_field_yes" name="show_credits_field" class="styled lwgdpr_bar_on" value="true" <?php echo ( true === $the_options['show_credits'] ) ? ' checked="checked"' : ''; ?> /><?php esc_attr_e( 'On', 'lwgdpr-cookie-consent' ); ?>
 						<input type="radio" id="show_credits_field_no" name="show_credits_field" class="styled" value="false" <?php echo ( false === $the_options['show_credits'] ) ? ' checked="checked" ' : ''; ?> /><?php esc_attr_e( 'Off', 'lwgdpr-cookie-consent' ); ?>
+					</td>
+				</tr>
+			</table>
+		</div>
+		<div class="lwgdpr_sub_tab_content" data-id="import-export-settings-general">
+			<p></p>
+			<table class="form-table">
+				<tr valign="top">
+					<th scope="row"><label><?php esc_attr_e( 'Export Settings', 'lwgdpr-cookie-consent' ); ?></label></th>
+					<td>
+						<a href="#" id="lwgdpr_export_settings" class="button button-secondary"><?php esc_attr_e( 'Export', 'lwgdpr-cookie-consent' ); ?></a>
+					</td>
+				</tr>
+				<tr valign="top">
+					<th scope="row"><label for="import_settings_json"><?php esc_attr_e( 'Import Settings', 'lwgdpr-cookie-consent' ); ?></label></th>
+					<td>
+						<input type="file" id="import_settings_json" name="import_settings_json" value="" class="all-options" accept=".json" />
+						<a href="#" id="lwgdpr_import_settings" class="button button-primary"><?php esc_attr_e( 'Import', 'lwgdpr-cookie-consent' ); ?></a>
 					</td>
 				</tr>
 			</table>

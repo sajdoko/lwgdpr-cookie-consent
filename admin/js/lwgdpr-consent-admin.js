@@ -144,6 +144,77 @@
 					}
 				}
 			);
+			$(document).on('click', '#lwgdpr_export_settings', function (event) {
+				event.preventDefault();
+				var form_data = new FormData();
+				form_data.append('action', 'lwgdpr_export_settings');
+				form_data.append('security', lwgdpr_admin_ajax_object.security);
+				$.ajax({
+						url: ajaxurl,
+						type: 'POST',
+						data: form_data,
+						contentType: false,
+						cache: false,
+						processData: false
+					})
+					.done(function (response) {
+						if (response.success === true) {
+							// Assuming 'response.data' contains the JSON data you want to download
+							var blob = new Blob([JSON.stringify(response.data.settings)], {type: "application/json"});
+							var url = URL.createObjectURL(blob);
+							// Create a link and set the URL as the link's href attribute
+							var downloadLink = document.createElement("a");
+							downloadLink.href = url;
+							downloadLink.download = "lwgdpr_cookie_consent_settings.json";
+
+							// Append the link to the body, click it, and then remove it
+							document.body.appendChild(downloadLink);
+							downloadLink.click();
+							document.body.removeChild(downloadLink);
+
+							// Clean up by revoking the Object URL
+							URL.revokeObjectURL(url);
+
+							lwgdpr_notify_msg.success(response.data.message);
+						} else {
+							lwgdpr_notify_msg.error(response.data.message);
+						}
+					})
+					.fail(function (response) {
+						console.log(response);
+						lwgdpr_notify_msg.error(response.statusText);
+					})
+			});
+
+			$(document).on('click', '#lwgdpr_import_settings', function (e) {
+				e.preventDefault();
+				var formData = new FormData();
+				formData.append('action', 'lwgdpr_import_settings');
+				formData.append('security', lwgdpr_admin_ajax_object.security);
+				formData.append('import_settings_json', $('#import_settings_json')[0].files[0]);
+
+				$.ajax({
+						url: ajaxurl,
+						type: 'POST',
+						data: formData,
+						contentType: false,
+						processData: false,
+						success: function(response) {
+							if (response.success) {
+								lwgdpr_notify_msg.success(response.data.message + ', Reloading page in 2 seconds');
+								setTimeout(
+									function(){
+										window.location.reload();
+									},
+									2000
+								);
+							} else {
+								lwgdpr_notify_msg.error(response.data.message);
+							}
+						}
+				});
+			});
+
 			$( '#lwgdpr_settings_form' ).submit(
 				function(e){
 					var submit_action = $( '#lwgdpr_update_action' ).val();
