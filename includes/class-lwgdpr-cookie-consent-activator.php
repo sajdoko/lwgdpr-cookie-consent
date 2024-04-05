@@ -43,7 +43,7 @@ class Lw_Gdpr_Cookie_Consent_Activator {
     }
 
 		// Exclude from cache 'lwgdpr_*' cookies
-		$WpFastestCacheExclude = get_option('WpFastestCacheExclude', []);
+		$WpFastestCacheExclude = get_option('WpFastestCacheExclude');
 		$WpFastestCacheExclude = json_decode($WpFastestCacheExclude, true);
 		$WpFastestCacheExclude[] = ["prefix" => "contain", "content" => "lwgdpr_", "type" => "cookie"];
 		update_option('WpFastestCacheExclude', json_encode($WpFastestCacheExclude));

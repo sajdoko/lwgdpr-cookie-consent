@@ -1161,7 +1161,6 @@ GDPR_CCPA_COOKIE_EXPIRE = (typeof GDPR_CCPA_COOKIE_EXPIRE !== 'undefined' ? GDPR
 
 	$(document).ready(
 		function () {
-
 			if (typeof lwgdpr_cookiebar_settings != 'undefined') {
 				GDPR.set({
 					settings: lwgdpr_cookiebar_settings
@@ -1177,12 +1176,9 @@ GDPR_CCPA_COOKIE_EXPIRE = (typeof GDPR_CCPA_COOKIE_EXPIRE !== 'undefined' ? GDPR
 
 			GDPR.setGoogleConsent();
 
-		}
-	);
+		},
 
-	$(document).ready(
 		function () {
-
 			$(".lwgdpr-column").click(
 				function () {
 					$(".lwgdpr-column", this);
@@ -1198,5 +1194,28 @@ GDPR_CCPA_COOKIE_EXPIRE = (typeof GDPR_CCPA_COOKIE_EXPIRE !== 'undefined' ? GDPR
 			);
 		}
 	);
+
+	$(window).on("load", function () {
+		$('a[href^="mailto"]').click(function () {
+			let gaCategory = this.getAttribute("data-vars-ga-category") || "email";
+			let gaAction = this.getAttribute("data-vars-ga-action") || "send";
+			let gaLabel = this.getAttribute("data-vars-ga-label") || this.href;
+			GDPR.gtag("event", gaAction, {"event_category": gaCategory,"event_label": gaLabel});
+		});
+
+		$('a[href^="tel"]').click(function () {
+			let gaCategory = this.getAttribute("data-vars-ga-category") || "telephone";
+			let gaAction = this.getAttribute("data-vars-ga-action") || "call";
+			let gaLabel = this.getAttribute("data-vars-ga-label") || this.href;
+			GDPR.gtag("event", gaAction, {"event_category": gaCategory,"event_label": gaLabel});
+		});
+
+		$(".wpcf7").on('wpcf7mailsent', function (event) {
+			let gaCategory = "form";
+			let gaAction = "submit";
+			let gaLabel = event.currentTarget.baseURI;
+			GDPR.gtag("event", gaAction, {"event_category": gaCategory,"event_label": gaLabel});
+		});
+	});
 
 })(jQuery);
